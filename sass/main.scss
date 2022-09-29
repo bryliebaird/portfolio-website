@@ -10,13 +10,15 @@ $secondary: #483978;
 $info: #5793ac;
 $danger: #f86d58;
 $light: #fff9f1;
+$dark: #1b0739;
 
-
-// $primary: #ff3287;
-// $secondary: #16be7e;
 
 $font-family-base: "Barlow";
 
+// hr
+$hr-color: $danger;
+$hr-opacity: 1;
+$hr-border-width: 3px;
 
 
 // import bootstrap whole sass lib (incorporates all above redefined vars & values)

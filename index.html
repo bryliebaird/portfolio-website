@@ -64,7 +64,9 @@
         <section id="projects" class="container-fluid bg-primary py-4">
             <div class="container-lg text-center">
                 <h3 class="text-light">Projects</h3>
-                <hr class="text-danger">
+                <div class="d-flex justify-content-center">
+                    <hr>
+                </div>
                 <p class="text-light">Here are some recent projects I've completed, including a digital escape room I developed and used as a teacher. To checkout more of my work please visit my Github account.</p>
             </div>
             <div class="container-lg">
@@ -93,7 +95,9 @@
         <section id="about" class="container-fluid bg-secondary py-4">
             <div class="container-lg text-center">
                 <h3 class="text-light">About</h3>
-                <hr class="text-danger">
+                <div class="d-flex justify-content-center">
+                    <hr>
+                </div>
                 <img src="/assets/img/portfolio-logo.svg" alt="brylie baird logo image">
                 <p class="text-light mb-0">
                     “If you don’t like your destiny, don’t accept it. Instead have the courage to change it the way you want it to be.”
@@ -111,53 +115,57 @@
         <section id="contact" class="container-fluid bg-primary py-4">
             <div class="container-lg text-center">
                 <h3 class="text-light">Contact</h3>
-                <hr class="text-danger">
+                <div class="d-flex justify-content-center">
+                    <hr>
+                </div>
                 <p class="text-light">
                     Interested in working together or have any questions? Let’s talk!
                 </p>
-                <button class="btn btn-secondary">Say Hello</button>
+                <button class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#contactModal">Say Hello</button>
             </div>
         </section>
 
-        <footer class="container-fluid bg-secondary py-5">
-            <div class="container-lg mb-3">
-                <div class="row d-flex justify-content-center">
-                    <div class="col-2 text-center">
-                        <a class="btn btn-light" href="#intro" role="button">
-                            <i class="fa-solid fa-arrow-up fa-2xl"></i>
-                        </a>
+        <footer class="container-fluid bg-secondary pt-5">
+            <div class="containger-lg bg-primary py-3">
+                <div class="container-lg mb-5">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-2 text-center">
+                            <a class="btn btn-light" href="#intro" role="button">
+                                <i class="fa-solid fa-arrow-up fa-2xl"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="container-lg">
-                <div class="row d-flex justify-content-center">
-                    
-                    <!-- github btn-->
-                    <div class="col-2 text-center">
-                        <a class="btn btn-light" href="https://github.com/bryliebaird" role="button" target="_blank">
-                            <i class="fa-brands fa-github fa-2xl"></i>
-                        </a>
-                    </div>
-
-                    <!-- linkedin btn -->
-                    <div class="col-2 text-center">
-                        <a class="btn btn-light" href="https://www.linkedin.com/in/brylie-baird/" role="button" target="_blank">
-                            <i class="fa-brands fa-linkedin fa-2xl"></i>
-                        </a>
-                    </div>
-
-                    <!-- instagram btn-->
-                    <div class="col-2 text-center">
-                        <button class="footer-btn btn btn-light" data-bs-toggle="modal" data-bs-target="#socialModal">
-                            <i class="fa-brands fa-instagram fa-2xl"></i>
-                        </button>
-                    </div>
-
-                    <!-- twitter btn -->
-                    <div class="col-2 text-center">
-                        <button class="footer-btn btn btn-light" data-bs-toggle="modal" data-bs-target="#socialModal">
-                            <i class="fa-brands fa-twitter fa-2xl"></i>
-                        </button>
+                <div class="container-lg">
+                    <div class="row d-flex justify-content-center">
+                        
+                        <!-- github btn-->
+                        <div class="col-2 text-center">
+                            <a class="btn btn-light" href="https://github.com/bryliebaird" role="button" target="_blank">
+                                <i class="fa-brands fa-github fa-2xl"></i>
+                            </a>
+                        </div>
+    
+                        <!-- linkedin btn -->
+                        <div class="col-2 text-center">
+                            <a class="btn btn-light" href="https://www.linkedin.com/in/brylie-baird/" role="button" target="_blank">
+                                <i class="fa-brands fa-linkedin fa-2xl"></i>
+                            </a>
+                        </div>
+    
+                        <!-- instagram btn-->
+                        <div class="col-2 text-center">
+                            <button class="footer-btn btn btn-light" data-bs-toggle="modal" data-bs-target="#socialModal">
+                                <i class="fa-brands fa-instagram fa-2xl"></i>
+                            </button>
+                        </div>
+    
+                        <!-- twitter btn -->
+                        <div class="col-2 text-center">
+                            <button class="footer-btn btn btn-light" data-bs-toggle="modal" data-bs-target="#socialModal">
+                                <i class="fa-brands fa-twitter fa-2xl"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -180,6 +188,36 @@
                 </div>
             </div>
         </div>
+
+
+        <!-- contact form modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content p-3">
+                    <div class="modal-body">
+                        <div class="d-flex justify-content-between mb-4">
+                            <h5 class="modal-title" id="contactModalLabel">Contact Today.</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="userName" aria-describedby="inputName" placeholder="Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" id="userEmail" aria-describedby="inputEmail" placeholder="Email Address">
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                          </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
 
 
 

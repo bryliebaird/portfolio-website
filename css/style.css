@@ -4,3 +4,7 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 0.35rem;
 }
+
+hr {
+    width: 20%;
+}
