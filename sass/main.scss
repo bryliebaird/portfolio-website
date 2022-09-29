@@ -21,5 +21,24 @@ $hr-opacity: 1;
 $hr-border-width: 3px;
 
 
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+
+// add display heading
+$custom-display-font-sizes: (
+  10: 5rem,
+);
+
+$display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
+
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/utilities";
+
+
+
+
+
+
 // import bootstrap whole sass lib (incorporates all above redefined vars & values)
 @import "../node_modules/bootstrap/scss/bootstrap";
