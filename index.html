@@ -24,7 +24,7 @@
     <body>
 
         <!-- navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light py-3">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-secondary py-3">
             <div class="container-lg">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-links" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -49,14 +49,14 @@
         </nav>
 
         <!-- intro section -->
-        <section id="intro" class="container-fluid bg-secondary">
-            <div id="header-div" class="container-fluid text-center bg-primary">
+        <section id="intro" class="container-fluid bg-secondary pb-5">
+            <div id="intro-div" class="container-fluid bg-primary pb-5">
                 <h1 class="text-light">Brylie Baird</h1>
                 <h2 class="text-light">Just your friendly neighborhood developer.</h2>
             </div>
             <div class="container-lg text-center">
                 <img src="assets/img/portfolio-logo.svg" alt="brylie baird logo">
-                <p class="lead text-light">Hello, World! I'm Brylie Baird, a Front-End Web Developer based out of Austin, TX. Welcome to my page!</p>
+                <p class="lead text-light mb-0">Hello, World! I'm Brylie Baird, a Front-End Web Developer based out of Austin, TX. Welcome to my page!</p>
             </div>
         </section>
 
@@ -120,25 +120,34 @@
         </section>
 
         <footer class="container-fluid bg-secondary py-5">
+            <div class="container-lg mb-3">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-2 text-center">
+                        <button class="footer-btn btn btn-light">
+                            <i class="social-icon fa-brands fa-github fa-xl"></i>
+                        </button> 
+                    </div>
+                </div>
+            </div>
             <div class="container-lg">
                 <div class="row d-flex justify-content-center">
                     <div class="col-2 text-center">
-                        <button class="footer-btn btn btn-primary">
+                        <button class="footer-btn btn btn-light">
                             <i class="social-icon fa-brands fa-github fa-xl"></i>
                         </button>
                     </div>
                     <div class="col-2 text-center">
-                        <button class="footer-btn btn btn-primary">
+                        <button class="footer-btn btn btn-light">
                             <i class="social-icon fa-brands fa-linkedin fa-xl"></i>
                         </button>
                     </div>
                     <div class="col-2 text-center">
-                        <button class="footer-btn btn btn-primary">
+                        <button class="footer-btn btn btn-light" data-bs-toggle="modal" data-bs-target="#socialModal">
                             <i class="social-icon fa-brands fa-instagram fa-xl"></i>
                         </button>
                     </div>
                     <div class="col-2 text-center">
-                        <button class="footer-btn btn btn-primary">
+                        <button class="footer-btn btn btn-light" data-bs-toggle="modal" data-bs-target="#socialModal">
                             <i class="social-icon fa-brands fa-twitter fa-xl"></i>
                         </button>
                     </div>
@@ -147,6 +156,24 @@
         </footer>
     
         
+
+        <!-- ###########################################################-->
+
+        <!-- social media modal -->
+        <div class="modal fade" id="socialModal" tabindex="-1" aria-labelledby="socialModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h5 class="text-center" id="socialModalLabel">Coming Soon!</h5>                
+                        <p class="text-center">Thank you for your interest, Instagram and Twitter accounts will be coming soon! 😄</p>
+                        <div class="d-flex justify-content-center">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Return</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
 
 
         <script src="script.js" async defer></script>
