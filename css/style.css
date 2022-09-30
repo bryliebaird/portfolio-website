@@ -12,3 +12,19 @@ hr {
     border-radius: 50%;
     transition: 0.3s ease-in;
 }
+
+nav {
+    box-shadow: rgb(45, 163, 169) 0px 3px 5px 0px;
+}
+
+.btn {
+    font-family: Montserrat, sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.1875rem;
+    text-transform: uppercase;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
