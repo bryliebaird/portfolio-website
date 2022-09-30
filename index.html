@@ -113,7 +113,7 @@
         </section>
 
         <!--contact section -->
-        <section id="contact" class="container-fluid bg-primary py-4">
+        <section id="contact" class="container-fluid bg-secondary py-5">
             <div class="container-lg text-center">
                 <h3 class="text-light">Contact</h3>
                 <div class="d-flex justify-content-center">
@@ -213,14 +213,25 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <form>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="userName" aria-describedby="inputName" placeholder="Name">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text bg-dark">
+                                    <i class="fa-solid fa-user fa-lg text-danger"></i>
+                                </span>
+                                <input id="userName" type="text" class="form-control bg-light" aria-label="Username" aria-describedby="userName" placeholder="Name">
                             </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" id="userEmail" aria-describedby="inputEmail" placeholder="Email Address">
+                            <div class="input-group mb-3">
+                                <span class="input-group-text bg-dark">
+                                    <i class="fa-solid fa-envelope fa-lg text-danger"></i>
+                                </span>
+                                <input id="userEmail" type="email" class="form-control bg-light" aria-label="Email" aria-describedby="userEmail" placeholder="Email Address">
+                            </div>
+                            <!-- user message -->
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control bg-light" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                <label class="textarea-label" for="floatingTextarea">Comments</label>
                             </div>
                             <div class="d-flex justify-content-center">
-                                <button type="submit" class="btn btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-dark">Submit</button>
                             </div>
                           </form>
                     </div>

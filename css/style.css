@@ -56,3 +56,11 @@ nav {
     border-top-right-radius: 50% 100%;
     box-shadow: 0 0 2rem 0.063rem #1b0739;
 }
+
+input {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.textarea-label {
+    font-family: 'Montserrat', sans-serif;
+}
