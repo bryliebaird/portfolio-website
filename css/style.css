@@ -7,8 +7,12 @@ h1, h3 {
 }
 
 h1 {
-    text-transform: uppercase;
     letter-spacing: 0.35rem;
+}
+
+h3 {
+    font-weight: 600;
+    letter-spacing: 0.188rem;
 }
 
 hr {
@@ -39,4 +43,16 @@ nav {
 
 .social-span {
     border-radius: 50%;
+}
+
+#intro-div {
+    border-bottom-left-radius: 50% 100%;
+    border-bottom-right-radius: 50% 100%;
+    box-shadow: 0 0 2rem 0.063rem #1b0739;
+}
+
+#footer-div {
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    box-shadow: 0 0 2rem 0.063rem #1b0739;
 }
