@@ -36,6 +36,12 @@ $btn-font-family:'Montserrat';
 $input-border-color: $dark;
 $input-group-addon-border-color: $dark;
 
+// links
+$link-color: $danger;
+$link-decoration: none;
+$link-hover-decoration: underline;
+$link-hover-color: $info;
+
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 

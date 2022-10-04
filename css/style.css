@@ -41,7 +41,9 @@ hr {
     opacity: 0.6;
 }
 
-
+.modal-content {
+    border-radius: 0;
+}
 .logo-img:hover {
     box-shadow: 0px 0px 0px 5px #2DA3A9;
     border-radius: 50%;
@@ -92,8 +94,12 @@ nav {
 
 input {
     font-family: 'Montserrat', sans-serif;
+    border-radius: 0;
 }
 
+.input-container, .input-group-text {
+    border-radius: 0;
+}
 .textarea-label {
     font-family: 'Montserrat', sans-serif;
 }
@@ -112,6 +118,13 @@ input {
     text-align: justify;
 }
 
+/* .card {
+    height: 12.5rem;
+    width: 12.5rem;
+} */
+
+
+
 /* Medium devices (tablets, 768px and up) */ 
 @media (min-width: 768px) { 
 
@@ -120,3 +133,4 @@ input {
     }
 
 }
+
