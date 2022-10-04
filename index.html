@@ -11,8 +11,8 @@
         <!-- custom bootstrap sass link -->
         <link rel="stylesheet" href="css/main.min.css">
 
-            <!-- custom css -->
-            <link rel="stylesheet" href="css/style.css">
+        <!-- custom css -->
+        <link rel="stylesheet" href="css/style.css">
 
         <!-- bootstrap icons CDN -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
@@ -79,46 +79,44 @@
                 </div>
             </div>
             <div class="container-lg mt-5">
-                <div class="row g-5 card-row">
-                    <!-- project card #1 -->
-                        <div class="card bg-dark col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                            <img src="/assets/img/project-card-1.svg">
-                        </div>
-                    
-                    <!-- project card #2 -->
-                        <div class="card bg-dark col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                            <img src="/assets/img/project-card-2.svg">
-                        </div>
-                   
-                    <!-- project card #3 w-25 -->
-                        <div class="card bg-dark col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                            <img src="/assets/img/project-card-3.svg">
-                        </div>
+                <!-- <div class="row g-5 card-row">
+                        <div class="card-wrapper">
+                            <div class="card bg-dark col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                                <img src="/assets/img/project-card-1.svg">
+                            </div>
+                            <div class="card bg-dark col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                                <img src="/assets/img/project-card-2.svg">
+                            </div>
+                            <div class="card bg-dark col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                                <img src="/assets/img/project-card-3.svg">
+                            </div>
+                        </div> -->
 
-                    <!-- project card #4 -->
+                    <!-- <div class="card-wrapper">
                         <div class="card bg-dark col-sm-12 col-md-6 col-lg-4 col-xl-3">
                             <img src="/assets/img/card-4.svg">
                         </div>
-                    
-                    <!-- project card #5 -->
-                    <div class="card bg-dark col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                        <img src="/assets/img/card-5.svg">
-                    </div>
+                        <div class="card bg-dark col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                            <img src="/assets/img/card-5.svg">
+                        </div>
+                        <div class="card bg-dark col-sm-12 col-md-6 col-lg-4 col-xl-3">
+                            <img src="assets/img/card-6.svg">
+                        </div>
+                    </div> -->
 
-                    <!-- project card #6 -->
-                    <div class="card bg-dark col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                        <img src="assets/img/card-6.svg">
-                    </div>
-
-                    <!-- project card #7 -->
-                    <div class="card bg-dark col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                        <img src="assets/img/card-7.svg">
-                    </div>
-
-                    <!-- project card #8 -->
-                    <div class="card bg-dark col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                        <img src="assets/img/card-8.svg">
-                    </div>
+                    <article class="card-container">
+                        <div class="card w-25 bg-dark">
+                            <div class="front face">
+                                <img class="card-img" src="assets/img/project-card-2.svg">
+                            </div>
+                            <div class="back front">
+                                <p class="card-title">Unplugged Retreat</p>
+                                <form action="https://bryliebaird.github.io/unplugged-retreat/" target="_blank" class="btn">
+                                    <input class="btn-font" type="submit" value="View" />
+                                </form>
+                            </div>
+                        </div>
+                    </article>
 
                 </div>
             </div>
@@ -251,7 +249,7 @@
                             <h5 class="modal-title" id="contactModalLabel">Contact Today.</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <form>
+                        <form id="form" action="https://formsubmit.co/3ec9605a560317a4391679720afa7698" method="POST">
                             <div class="input-group mb-3">
                                 <span class="input-group-text bg-dark">
                                     <i class="fa-solid fa-user fa-lg text-danger"></i>
@@ -272,11 +270,52 @@
                             <div class="d-flex justify-content-center">
                                 <button type="submit" class="btn btn-dark">Submit</button>
                             </div>
+                            <input type="hidden" name="_subject" value="***Portfolio Website Response!!!***">
+                            <input type="hidden" name="_next" value="../pages/thankyou.html">
+                            <input type="hidden" name="_captcha" value="false">
                           </form>
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <!-- <form id="form" class="close-form" action="https://formsubmit.co/3ec9605a560317a4391679720afa7698" method="POST">
+            <div class="input-container">
+                <span class="icon-container">
+                    <i class="fa-solid fa-user fa-lg contact-icon"></i>
+                </span>
+                <input type="text" name="name" placeholder="Name" class="contact-input" required>
+            </div>
+            <div class="input-container">
+                <span class="icon-container">
+                    <i class="fa-solid fa-envelope fa-lg contact-icon"></i>
+                </span>
+                <input type="email" name="email" placeholder="Email Address" class="contact-input" required>
+            </div>
+            <div class="textarea-container">
+                <textarea name="message" placeholder="Enter your message here..." required></textarea>
+            </div>
+            <input type="hidden" name="_subject" value="***Portfolio Website Response!!!***">
+            <input type="hidden" name="_next" value="https://bryliebaird.org/pages/thankyou.html">                             
+            <input type="hidden" name="_autoresponse" value="Thank you for reaching out! You should hear from me within 24 hours. I look forward to working with you!&#128516;">
+            <button type="submit" id="submitBtn" class="btn btn-font">Submit</button>
+        </form> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         <script src="script.js" async defer></script>
 
