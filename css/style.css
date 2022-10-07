@@ -6,8 +6,8 @@ body {
     width: 100%;
 }
 
-.half-width {
-    width: 90vw;
+.section-width {
+    width: 85vw;
     text-align: justify;
 }
 
@@ -255,12 +255,13 @@ input {
 
 /* Medium devices (tablets, 768px and up) */ 
 @media (min-width: 768px) { 
-
-    .half-width {
-        width: 45vw;
+    .section-width {
+        width: 70vw;
     }
-
-  
-
 }
 
+@media (min-width: 992px) { 
+    .section-width {
+        width: 45vw;
+    }
+}
