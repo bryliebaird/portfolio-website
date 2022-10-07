@@ -11,6 +11,11 @@ body {
     text-align: justify;
 }
 
+.row-width {
+    width: 85%;
+    background: #ac61b9;
+}
+
 .full-height {
     height: 100vh;
 }
@@ -128,9 +133,9 @@ nav {
 .card-container {
     /* height: 50vw;
     width: 50vw; */
+    /* height: 40vh; */
+    /* width: 80%; */
     height: 40vh;
-    width: 80%;
-
     z-index: 1;
     perspective: 1000px;
     margin: 0 0 3.5rem;
@@ -218,6 +223,19 @@ input {
 .social-span {
     border-radius: 50%;
 }
+
+
+
+.project-row {
+    height: 80vh;
+}
+
+.project-card {
+    width: 22rem;
+}
+
+
+
 
 
 /* ==================================== MEDIA QUERIES ======================================= */
