@@ -288,6 +288,12 @@ input {
 }
 
 
+card-btn-container:hover {
+    display: none;
+    background: #2DA3A9;
+}
+
+
 
 /* ==================================== MEDIA QUERIES ======================================= */
 
