@@ -31,7 +31,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
 
-h1, h3 {
+h1, h3, h4 {
     text-transform: uppercase;
 }
 
@@ -53,6 +53,10 @@ h2 {
 h3 {
     font-weight: 600;
     letter-spacing: 0.188rem;
+}
+
+h4 {
+    letter-spacing: .08rem;
 }
 
 p {
@@ -225,26 +229,26 @@ input {
 }
 
 
-
+/* ############ project cards ################ */
 .project-row {
-    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-card, .card-container {
     width: 18rem;
 }
 
-
 .text-box {
-    width: 90%;
-    
+    width: 90%;   
 }
 
 .img-box {
     background: #ffffff;
     overflow: hidden;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
-  
 }
 
 .project-img {
@@ -275,13 +279,12 @@ input {
 
 .project-card:hover{
     background: #fff;
-  box-shadow: 0px 15px 26px rgba(0, 0, 0, 0.50);
-  -webkit-transition: all 0.2s ease-in;
-  -moz-transition: all 0.2s ease-in;
-  -ms-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-
+    box-shadow: 0 0 50px 1px #ac61b9;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
 
@@ -324,10 +327,20 @@ input {
     .section-width {
         width: 70vw;
     }
+
+    .project-row {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+  
 }
 
 @media (min-width: 992px) { 
     .section-width {
         width: 45vw;
     }
+
+
 }
