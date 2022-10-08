@@ -46,57 +46,42 @@ $link-hover-color: $info;
 
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
-
-
-
-
-@mixin custom-button {
-  background: $info;
-}
-
-.custom-btn {
-  background: $dark;
-  font-family: $btn-font-family;
-  font-size: 1rem;
-  letter-spacing: 0.1875rem;
-  text-transform: uppercase;
-}
-
-.custom-btn:hover {
-  @include custom-button;
-}
-
+@import "../node_modules/bootstrap/scss/_buttons.scss";
 
 // custom hover color for card-btn using .btn-feature from bootstrap mixins 
-$feature-bg: $info;
+$feature-bg: info;
 
 .btn-feature {
   @include button-variant($feature-bg, darken($feature-bg, 3%));
 }
 
-@mixin flashy-btn {
-  background: pink;
-}
+// @mixin custom-button {
+//   background: $info;
+//   border: $info;
+//   padding: 0.75rem 1.25rem;
+// }
 
-.flash {
-  background: yellow;
-}
-.flash:hover {
-  @include flashy-btn;
-}
+// .custom-btn {
+//   background: $dark;
+//   font-family: $btn-font-family;
+//   font-size: 1rem;
+//   letter-spacing: 0.1875rem;
+//   text-transform: uppercase;
+//   color: #fff;
 
-@mixin important-text {
-  color: red;
-  font-size: 25px;
-  font-weight: bold;
-  border: 1px solid blue;
-}
+//   padding: 0.75rem 1.25rem;
+//   font-weight: 400;
+//   line-height: 1.5;
+//   border: 1px solid $dark;
+//   border-radius: 0;
+//   text-align: center;
+//   vertical-align: center;
+//   transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+// }
 
-.practice {
-  @include important-text;
-  background: green;
-}
-
+// .custom-btn:hover {
+//   @include custom-button;
+// }
 
 
 // add custom colors
@@ -117,12 +102,6 @@ $custom-display-headings: (
 $display-font-sizes: map-merge($custom-display-headings, $display-font-sizes);
 
 
-// add display heading
-// $custom-display-font-sizes: (
-//   10: 5rem,
-// );
-
-// $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
 
 @import "../node_modules/bootstrap/scss/maps";
 @import "../node_modules/bootstrap/scss/utilities";

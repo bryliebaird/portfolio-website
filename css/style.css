@@ -105,6 +105,19 @@ nav {
     text-transform: uppercase;
 }
 
+.article-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.btn-cover {
+    width: 15%;
+}
+
+button {
+    width: 100%;
+}
 
 /* ############### Project Cards ################## */
 .card, .thanks-card {
