@@ -42,24 +42,36 @@ $link-decoration: none;
 $link-hover-decoration: underline;
 $link-hover-color: $info;
 
+
+
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 
 
-// add colors to theme
+// add custom colors
 $custom-colors: (
   "primary-light": #e7e7e7
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
-
-// add display heading
-$custom-display-font-sizes: (
-  10: 5rem,
+// add custom display font-size 
+$custom-display-headings: (
+  7: 2rem,
+  8: 1.75rem,
+  9: 1.5rem,
+  10: 1.25rem
 );
 
-$display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
+$display-font-sizes: map-merge($custom-display-headings, $display-font-sizes);
+
+
+// add display heading
+// $custom-display-font-sizes: (
+//   10: 5rem,
+// );
+
+// $display-font-sizes: map-merge($custom-display-font-sizes, $display-font-sizes);
 
 @import "../node_modules/bootstrap/scss/maps";
 @import "../node_modules/bootstrap/scss/utilities";
