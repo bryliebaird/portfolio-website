@@ -307,20 +307,24 @@ input {
 
 
 
-.project-link {
+.project-link, .social-link {
+    background: #f86d58;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #f86d58;
     transition: 0.3s;
 }
 
-.project-link:hover {
-    text-decoration: none;
-    background: #2DA3A9;
-    
+.social-link {
+    background: #fff9f1;
 }
+
+.project-link:hover, .social-link:hover {
+    background: #5793ac; 
+    text-decoration: none;
+}
+
 
 /* ==================================== MEDIA QUERIES ======================================= */
 
