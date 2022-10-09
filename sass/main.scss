@@ -58,36 +58,6 @@ $feature-bg: info;
 $link-hover-bg: $dark;
 
 
-
-// @mixin custom-button {
-//   background: $info;
-//   border: $info;
-//   padding: 0.75rem 1.25rem;
-// }
-
-// .custom-btn {
-//   background: $dark;
-//   font-family: $btn-font-family;
-//   font-size: 1rem;
-//   letter-spacing: 0.1875rem;
-//   text-transform: uppercase;
-//   color: #fff;
-
-//   padding: 0.75rem 1.25rem;
-//   font-weight: 400;
-//   line-height: 1.5;
-//   border: 1px solid $dark;
-//   border-radius: 0;
-//   text-align: center;
-//   vertical-align: center;
-//   transition: color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
-// }
-
-// .custom-btn:hover {
-//   @include custom-button;
-// }
-
-
 // add custom colors
 $custom-colors: (
   "primary-light": #e7e7e7
@@ -100,7 +70,7 @@ $custom-display-headings: (
   7: 2rem,
   8: 1.75rem,
   9: 1.5rem,
-  10: 1.25rem
+  10: 1.18rem
 );
 
 $display-font-sizes: map-merge($custom-display-headings, $display-font-sizes);
