@@ -247,6 +247,11 @@ input {
 
 
 /* ############ project cards ################ */
+
+#project-cards {
+    width: 90vw;
+}
+
 .project-row {
     display: flex;
     flex-direction: column;
@@ -254,8 +259,12 @@ input {
     align-items: center;
 }
 
-.project-card, .card-container {
+/* .project-card, .card-container {
     width: 18rem;
+} */
+
+.project-card {
+    width: 100%;
 }
 
 .text-box {
@@ -332,10 +341,7 @@ input {
     text-decoration: none;
 }
 
-/* .social-wrapper {
-    width: 25%;
-    background: #1b0739;
-} */
+
 
 /* ==================================== MEDIA QUERIES ======================================= */
 
