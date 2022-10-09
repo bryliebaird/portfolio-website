@@ -55,6 +55,10 @@ $feature-bg: info;
   @include button-variant($feature-bg, darken($feature-bg, 3%));
 }
 
+$link-hover-bg: $dark;
+
+
+
 // @mixin custom-button {
 //   background: $info;
 //   border: $info;

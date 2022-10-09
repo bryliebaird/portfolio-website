@@ -67,37 +67,7 @@ hr {
     width: 20%;
 }
 
-
-/* ############### Navbar + Intro ################## */
-nav {
-    box-shadow: rgb(45, 163, 169) 0px 3px 5px 0px;
-}
-
-.nav-link {
-    font-size: 1.35rem;
-    color: rgb(0, 255, 252);
-    opacity: 0.6;
-}
-
-#intro-div {
-    border-bottom-left-radius: 50% 100%;
-    border-bottom-right-radius: 50% 100%;
-    box-shadow: 0 0 2rem 0.063rem #1b0739;
-}
-
-
-
-.modal-content {
-    border-radius: 0;
-}
-
-.logo-img:hover {
-    box-shadow: 0px 0px 0px 5px #2DA3A9;
-    border-radius: 50%;
-    transition: 0.3s ease-in;
-}
-
-
+/* ############### Button Styles ################## */
 .btn {
     font-family: Montserrat, sans-serif;
     font-size: 1rem;
@@ -119,7 +89,44 @@ button {
     width: 100%;
 }
 
+
+
+
+
+/* ############### Navbar + Intro ################## */
+nav {
+    box-shadow: rgb(45, 163, 169) 0px 3px 5px 0px;
+}
+
+.nav-link {
+    font-size: 1.35rem;
+    color: rgb(0, 255, 252);
+    opacity: 0.6;
+}
+
+#intro-div {
+    border-bottom-left-radius: 50% 100%;
+    border-bottom-right-radius: 50% 100%;
+    box-shadow: 0 0 2rem 0.063rem #1b0739;
+}
+
+.modal-content {
+    border-radius: 0;
+}
+
+.logo-img:hover {
+    box-shadow: 0px 0px 0px 5px #2DA3A9;
+    border-radius: 50%;
+    transition: 0.3s ease-in;
+}
+
+
+
 /* ############### Project Cards ################## */
+.card {
+    margin: 0 0px 15px 0px;
+}
+
 .card, .thanks-card {
     border-radius: 0;
     box-shadow: 0 0 50px 1px #ac61b9;
@@ -130,9 +137,6 @@ button {
 }
 
 
-.card {
-    margin: 0 0px 15px 0px;
-}
 
 /* ================================= */
 
@@ -301,12 +305,22 @@ input {
 }
 
 
-card-btn-container:hover {
-    display: none;
-    background: #2DA3A9;
+
+
+.project-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f86d58;
+    transition: 0.3s;
 }
 
-
+.project-link:hover {
+    text-decoration: none;
+    background: #2DA3A9;
+    
+}
 
 /* ==================================== MEDIA QUERIES ======================================= */
 
