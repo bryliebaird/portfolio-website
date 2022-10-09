@@ -316,15 +316,26 @@ input {
     transition: 0.3s;
 }
 
+.social-wrapper {
+    width: 60%;
+}
+
 .social-link {
     background: #fff9f1;
+    width: 15%;
+    padding: 1rem;
 }
+
 
 .project-link:hover, .social-link:hover {
     background: #5793ac; 
     text-decoration: none;
 }
 
+/* .social-wrapper {
+    width: 25%;
+    background: #1b0739;
+} */
 
 /* ==================================== MEDIA QUERIES ======================================= */
 
