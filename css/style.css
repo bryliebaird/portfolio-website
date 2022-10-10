@@ -2,17 +2,6 @@ body {
     background: #483978;
 } 
 
-#intro {
-    height: 50vh;
-    position: static;
-    background: #483978;
-    visibility: visible;
-}
-
-#particles-js {
-   visibility: hidden;
-}
-
 .full-width {
     width: 100%;
 }
@@ -270,9 +259,19 @@ input {
     width: 18rem;
 } */
 
-.project-card {
-    width: 100%;
+.card-wrapper {
+    display: flex;
+    justify-content: center;
 }
+
+.project-card {
+    width: calc(100%/4);
+    margin: 0 1.5rem;
+}
+
+/* .project-card {
+    width: 100%;
+} */
 
 .text-box {
     width: 90%;
@@ -355,6 +354,21 @@ input {
 
 /* ==================================== MEDIA QUERIES ======================================= */
 
+
+@media (min-width 0px) {
+    #intro {
+        height: 50vh;
+        position: static;
+        background: #483978;
+        visibility: visible;
+    }
+
+    #particles-js {
+    visibility: hidden;
+    }
+    
+}
+
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
 
@@ -365,13 +379,13 @@ input {
         align-items: center;
     }
     
-    .card-wrapper {
+    /* .card-wrapper {
         width: 90%;
         background: pink;
         display: flex;
         flex-direction: row;
         justify-content: center;
-    }
+    } */
 
     .card:nth-child(2){
         margin-right: 35px;
@@ -390,21 +404,6 @@ input {
 @media (min-width: 768px) { 
     .section-width {
         width: 70vw;
-    }
-    
-
-    #intro {
-        height: 100vh;
-        position: absolute;
-        visibility: visible;
-    }
-    
-    #particles-js {
-        position: relative;
-        height: 100%;
-        width: 100%;
-        background: #2DA3A9;
-        visibility: visible;
     }
     
     .project-row {
