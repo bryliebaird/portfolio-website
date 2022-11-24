@@ -73,16 +73,34 @@ p {
     font-size: 1.3rem;
 }
 
+.intro-message{
+    padding-top: 22px;
+    width: 70%;
+}
+
+.intro-text {
+    font-family: "Rubik";
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+
 hr {
     width: 20%;
 }
 
 /* ############### Button Styles ################## */
 .btn {
-    font-family: Montserrat, sans-serif;
+    /* font-family: Montserrat, sans-serif; */
     font-size: 1rem;
     letter-spacing: 0.1875rem;
     text-transform: uppercase;
+    font-weight: 500;
+    background: #f86d58;
+}
+
+.btn:hover{
+    /* background: #f86d58;
+    border-color: #f86d58; */
 }
 
 .article-btn {
@@ -282,10 +300,6 @@ input {
     margin-top: 25px;
 }
 
-/* .project-card, .card-container {
-    width: 18rem;
-} */
-
 .card-wrapper {
     display: flex;
     justify-content: center;
@@ -296,8 +310,9 @@ input {
     margin: 0 1.5rem;
 }
 
-/* .project-card {
-    width: 100%;
+/* .card-box {
+    background: #161b22;
+    color: white;
 } */
 
 .text-box {

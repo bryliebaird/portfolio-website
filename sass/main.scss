@@ -26,12 +26,12 @@ $hr-opacity: 1;
 $hr-border-width: 3px;
 
 // btn
-$btn-border-radius: 0;
+$btn-border-radius: 999em;
 $btn-padding-y: .75rem;
 $btn-padding-x: 1.25rem;
 
-$btn-link-hover-color: $info;
-$btn-font-family:'Montserrat';
+// $btn-link-hover-color: $primary;
+$btn-font-family:'Rubik';
 
 // input-group & textarea
 $input-border-color: $dark;
@@ -52,9 +52,9 @@ $link-hover-color: $info;
 // custom hover color for card-btn using .btn-feature from bootstrap mixins 
 $feature-bg: #483978;
 
-.btn-feature {
-  @include button-variant($feature-bg, darken($feature-bg, 3%));
-}
+// .btn-feature {
+//   @include button-variant($feature-bg, darken($feature-bg, 3%));
+// }
 
 $link-hover-bg: $dark;
 
