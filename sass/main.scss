@@ -4,6 +4,7 @@
 // Google Fonts: Monterrat
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 @import "../node_modules/bootstrap/scss/functions";
 
@@ -17,7 +18,7 @@ $dark: #1b0739;
 // background: #f4f4f4;
 
 // fonts
-$font-family-base: "Barlow";
+$font-family-base: "Rubik";
 
 // hr
 $hr-color: $danger;
@@ -29,7 +30,7 @@ $btn-border-radius: 0;
 $btn-padding-y: .75rem;
 $btn-padding-x: 1.25rem;
 
-$btn-link-hover-color: $danger;
+$btn-link-hover-color: $info;
 $btn-font-family:'Montserrat';
 
 // input-group & textarea
@@ -49,7 +50,7 @@ $link-hover-color: $info;
 @import "../node_modules/bootstrap/scss/_buttons.scss";
 
 // custom hover color for card-btn using .btn-feature from bootstrap mixins 
-$feature-bg: info;
+$feature-bg: #483978;
 
 .btn-feature {
   @include button-variant($feature-bg, darken($feature-bg, 3%));
