@@ -3,11 +3,16 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Website</title>
+        <title>Brylie Baird</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     
-    
+        <!-- <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+        <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" /> -->
+
+        <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%23ac61b9%22></rect><path fill=%22%231b0739%22 d=%22M45.94 61.06Q46.01 67.50 42.09 71Q38.17 74.50 31.73 74.50L31.73 74.50L17.17 74.50Q16.47 74.50 16.47 73.80L16.47 73.80L16.47 26.20Q16.47 25.50 17.17 25.50L17.17 25.50L30.96 25.50Q37.75 25.50 41.60 28.82Q45.45 32.15 45.45 38.52L45.45 38.52Q45.45 46.01 39.29 48.95L39.29 48.95Q38.94 49.16 39.29 49.30L39.29 49.30Q42.51 50.98 44.22 53.92Q45.94 56.86 45.94 61.06L45.94 61.06ZM23.47 31.31Q23.19 31.31 23.19 31.59L23.19 31.59L23.19 46.36Q23.19 46.64 23.47 46.64L23.47 46.64L31.03 46.64Q34.67 46.64 36.73 44.64Q38.80 42.65 38.80 39.15L38.80 39.15Q38.80 35.44 36.73 33.37Q34.67 31.31 31.03 31.31L31.03 31.31L23.47 31.31ZM31.45 68.62Q35.09 68.62 37.15 66.41Q39.22 64.21 39.22 60.36L39.22 60.36Q39.22 56.51 37.12 54.23Q35.02 51.96 31.38 51.96L31.38 51.96L23.47 51.96Q23.19 51.96 23.19 52.24L23.19 52.24L23.19 68.34Q23.19 68.62 23.47 68.62L23.47 68.62L31.45 68.62ZM83.53 61.06Q83.60 67.50 79.68 71Q75.76 74.50 69.32 74.50L69.32 74.50L54.76 74.50Q54.06 74.50 54.06 73.80L54.06 73.80L54.06 26.20Q54.06 25.50 54.76 25.50L54.76 25.50L68.55 25.50Q75.34 25.50 79.19 28.82Q83.04 32.15 83.04 38.52L83.04 38.52Q83.04 46.01 76.88 48.95L76.88 48.95Q76.53 49.16 76.88 49.30L76.88 49.30Q80.10 50.98 81.81 53.92Q83.53 56.86 83.53 61.06L83.53 61.06ZM61.06 31.31Q60.78 31.31 60.78 31.59L60.78 31.59L60.78 46.36Q60.78 46.64 61.06 46.64L61.06 46.64L68.62 46.64Q72.26 46.64 74.32 44.64Q76.39 42.65 76.39 39.15L76.39 39.15Q76.39 35.44 74.32 33.37Q72.26 31.31 68.62 31.31L68.62 31.31L61.06 31.31ZM69.04 68.62Q72.68 68.62 74.74 66.41Q76.81 64.21 76.81 60.36L76.81 60.36Q76.81 56.51 74.71 54.23Q72.61 51.96 68.97 51.96L68.97 51.96L61.06 51.96Q60.78 51.96 60.78 52.24L60.78 52.24L60.78 68.34Q60.78 68.62 61.06 68.62L61.06 68.62L69.04 68.62Z%22></path></svg>" />
+
+
         <!-- custom bootstrap sass link -->
         <link rel="stylesheet" href="css/main.min.css">
 
@@ -78,77 +83,131 @@
                     </div>
                 </div>
             </div>
+
+
             <div id="project-carousel" class="carousel slide mt-4" data-bs-ride="carousel">
                 <div class="carousel-inner py-5">
                     <div class="carousel-item active">
                         <div class="card-wrapper">
                             <article class="project-card bg-light">
                                 <div class="card-box">
+                                    <h4 class="project-title text-dark text-center my-3">Guess the Word</h4>
                                     <div class="img-box">
                                         <img class="project-img img-fluid" src="assets/img/guess-the-word.png" alt="unplugged retreat project landing image">
                                     </div>
-                                    <div class="d-flex justify-content-center">
-                                        <div class="text-box text-center mb-3">
-                                            <h4 class="text-secondary text-center mt-3">Guess the Word</h4>
-                                            <p class="project-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <div class="d-flex justify-content-end">
+                                    <div class="d-flex justify-content-center mt-4">
+                                        <div class="text-box w-100 text-center">
+                                    
+                                            <!-- <p class="d-none project-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+
+                                            <div class="project-btn-container d-flex justify-content-center bg-danger">
+                                                <div class="project-btn-cover w-50">
+                                                    <button class="btn project-btn">
+                                                        <a class="project-link text-center p-2" href="https://github.com/bryliebaird/guess-the-word" target="#_blank"role="button">            <i class="fa-solid fa-code fa-lg"></i>
+                                                        </a>
+                                                    </button>
+                                                </div>
+                                                <div class="project-btn-cover w-50">
+                                                    <button class="project-btn btn">
+                                                        <a class="project-link text-center p-2" href="https://bryliebaird.github.io/guess-the-word/?" target="#_blank" role="button">       
+                                                            <i class="fa-solid fa-link fa-lg"></i>
+                                                        </a>
+                                                    </button>
+                                                </div>    
+                                            </div>
+                                       
+
+                                            <div class="d-none d-flex justify-content-end">
                                             <!-- project #1, web link -->
-                                                <a class="project-link rounded-circle me-3 p-2 text-dark" href="https://bryliebaird.github.io/guess-the-word/?" target="#_blank" role="button">                                            <i class="fa-solid fa-link"></i>
+                                                <a class="project-link rounded-circle me-3 p-2" href="https://bryliebaird.github.io/guess-the-word/?" target="#_blank" role="button">                                            <i class="fa-solid fa-link"></i>
                                                 </a>
                                             <!-- project #1, code link -->
-                                                <a class="project-link rounded-circle p-2 text-dark" href="https://github.com/bryliebaird/guess-the-word" target="#_blank" role="button">                                            <i class="fa-solid fa-code"></i>
+                                                <a class="project-link rounded-circle p-2" href="https://github.com/bryliebaird/guess-the-word" target="#_blank" role="button">                                            <i class="fa-solid fa-code"></i>
                                                 </a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </article>
-                            <article class="project-card bg-light">
-                            <div class="card-box">
-                                <div class="img-box">
-                                    <img class="project-img img-fluid" src="assets/img/unplugged-retreat.png" alt="unplugged retreat project landing image">
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <div class="text-box text-center mb-3">
-                                        <h4 class="text-secondary text-center mt-3">Unplugged Retreat</h4>
-                                        <p class="project-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <div class="d-flex justify-content-end">
-                                        <!-- project #1, web link -->
-                                            <a class="project-link rounded-circle me-3 p-2 text-dark" href="https://bryliebaird.github.io/unplugged-retreat/?" target="#_blank" role="button">                                            <i class="fa-solid fa-link"></i>
-                                            </a>
-                                        <!-- project #1, code link -->
-                                            <a class="project-link rounded-circle p-2 text-dark" href="https://github.com/bryliebaird/unplugged-retreat" target="#_blank" role="button">                                            <i class="fa-solid fa-code"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article class="project-card bg-light">
-                            <div class="card-box">
-                                <div class="img-box">
-                                    <img class="project-img img-fluid" src="assets/img/github-repo.png" alt="Github repo website landing image">
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <div class="text-box text-center mb-3">
-                                        <h4 class="text-secondary text-center mt-3">Github Repo Gallery</h4>
-                                        <p class="project-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        <div class="d-flex justify-content-end">
-                                            <!-- project #1, web link -->
-                                            <a class="project-link rounded-circle me-3 p-2 text-dark" href="https://bryliebaird.github.io/github-repo-gallery/?" target="#_blank" role="button">                                       
-                                                <i class="fa-solid fa-link"></i>
-                                            </a>
-                                        <!-- project #1, code link -->
-                                            <a class="project-link rounded-circle p-2 text-dark" href="https://github.com/bryliebaird/github-repo-gallery" target="#_blank" role="button">                                      
-                                                <i class="fa-solid fa-code"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
                         </div>
                     </div>
+
+
+                    <div class="carousel-item">
+                        <div class="card-wrapper">
+                            <article class="project-card bg-light">
+                                <div class="card-box">
+                                    <div class="img-box">
+                                        <img class="project-img img-fluid" src="assets/img/unplugged-retreat.png" alt="unplugged retreat project landing image">
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="text-box text-center mb-3">
+                                            <h4 class="text-dark text-center mt-3">Unplugged Retreat</h4>
+                                            <p class="project-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <div class="d-flex justify-content-end">
+                                            <!-- project #1, web link -->
+                                                <a class="project-link rounded-circle me-3 p-2" href="https://bryliebaird.github.io/unplugged-retreat/?" target="#_blank" role="button">                                            <i class="fa-solid fa-link"></i>
+                                                </a>
+                                            <!-- project #1, code link -->
+                                                <a class="project-link rounded-circle p-2" href="https://github.com/bryliebaird/unplugged-retreat" target="#_blank" role="button">                                            <i class="fa-solid fa-code"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card-wrapper">
+                            <article class="project-card bg-light">
+                                <div class="card-box">
+                                    <div class="img-box">
+                                        <img class="project-img img-fluid" src="assets/img/github-repo.png" alt="Github repo website landing image">
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="text-box text-center mb-3">
+                                            <h4 class="text-dark text-center mt-3">Github Repo Gallery</h4>
+                                            <p class="project-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <div class="d-flex justify-content-end">
+                                                <!-- project #1, web link -->
+                                                <a class="project-link rounded-circle me-3 p-2 text-dark" href="https://bryliebaird.github.io/github-repo-gallery/?" target="#_blank" role="button">                                       
+                                                    <i class="fa-solid fa-link"></i>
+                                                </a>
+                                            <!-- project #1, code link -->
+                                                <a class="project-link rounded-circle p-2 text-dark" href="https://github.com/bryliebaird/github-repo-gallery" target="#_blank" role="button">                                      
+                                                    <i class="fa-solid fa-code"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev text-dark" type="button" data-bs-target="#project-carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next text-dark" type="button" data-bs-target="#project-carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+
+
+
+
+
+
+
+
+            </div>
+        </section>
+       
+<!-- 
                     <div class="carousel-item">
                         <div class="card-wrapper">
                             <article class="project-card bg-light">
@@ -158,14 +217,14 @@
                                     </div>
                                     <div class="d-flex justify-content-center">
                                         <div class="text-box text-center mb-3">
-                                            <h4 class="text-secondary text-center mt-3">Relax App</h4>
+                                            <h4 class="text-dark text-center mt-3">Relax App</h4>
                                             <p class="project-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                             <div class="d-flex justify-content-end">
-                                                <!-- project #1, web link -->
+                                                
                                                 <a class="project-link rounded-circle me-3 p-2 text-dark" href="#" target="#_blank" role="button">                                    
                                                     <i class="fa-solid fa-link"></i>
                                                 </a>
-                                            <!-- project #1, code link -->
+                                          
                                                 <a class="project-link rounded-circle p-2 text-dark" href="#" target="#_blank" role="button">                                    
                                                     <i class="fa-solid fa-code"></i>
                                                 </a>
@@ -174,6 +233,12 @@
                                     </div>
                                 </div>
                             </article>
+                        </div>
+                    </div>
+
+
+                    <div class="carousel-item">
+                        <div class="card-wrapper">
                             <article class="project-card bg-light">
                                 <div class="card-box">
                                     <div class="img-box">
@@ -181,37 +246,14 @@
                                     </div>
                                     <div class="d-flex justify-content-center">
                                         <div class="text-box text-center mb-3">
-                                            <h4 class="text-secondary text-center mt-3">Monuseal</h4>
+                                            <h4 class="text-dark text-center mt-3">Monuseal</h4>
                                             <p class="project-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                             <div class="d-flex justify-content-end">
-                                                <!-- project #1, web link -->
+                                                
                                                 <a class="project-link rounded-circle me-3 p-2 text-dark" href="#" target="#_blank" role="button">                                  
                                                     <i class="fa-solid fa-link"></i>
                                                 </a>
-                                            <!-- project #1, code link -->
-                                                <a class="project-link rounded-circle p-2 text-dark" href="#" target="#_blank" role="button">                                      
-                                                    <i class="fa-solid fa-code"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </article>
-                            <article class="project-card bg-light">
-                                <div class="card-box">
-                                    <div class="img-box">
-                                        <img class="project-img img-fluid" src="assets/img/digital-escape-room.png" alt="Halloween Digital Escape Room Landing Page">
-                                    </div>
-                                    <div class="d-flex justify-content-center">
-                                        <div class="text-box text-center mb-3">
-                                            <h4 class="text-secondary text-center mt-3">Digital Escape Room</h4>
-                                            <p class="project-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                            <div class="d-flex justify-content-end">
-                                                <!-- project #1, web link -->
-                                                <a class="project-link rounded-circle me-3 p-2 text-dark" href="https://www.canva.com/design/DAFKdLqTCDE/_N7Mtx2GK43y50nyx-a5tg/view?utm_content=DAFKdLqTCDE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="#_blank" role="button">                                  
-                                                    <i class="fa-solid fa-link"></i>
-                                                </a>
-                                            <!-- project #1, code link -->
+                                           
                                                 <a class="project-link rounded-circle p-2 text-dark" href="#" target="#_blank" role="button">                                      
                                                     <i class="fa-solid fa-code"></i>
                                                 </a>
@@ -221,6 +263,36 @@
                                 </div>
                             </article>
                         </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="card-wrapper">
+                            <article class="project-card bg-light">
+                                <div class="card-box">
+                                    <div class="img-box">
+                                        <img class="project-img img-fluid" src="assets/img/digital-escape-room.png" alt="Halloween Digital Escape Room Landing Page">
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="text-box text-center mb-3">
+                                            <h4 class="text-dark text-center mt-3">Digital Escape Room</h4>
+                                            <p class="project-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <div class="d-flex justify-content-end">
+                                           
+                                                <a class="project-link rounded-circle me-3 p-2 text-dark" href="https://www.canva.com/design/DAFKdLqTCDE/_N7Mtx2GK43y50nyx-a5tg/view?utm_content=DAFKdLqTCDE&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="#_blank" role="button">                                  
+                                                    <i class="fa-solid fa-link"></i>
+                                                </a>
+                                       
+                                                <a class="project-link rounded-circle p-2 text-dark" href="#" target="#_blank" role="button">                                      
+                                                    <i class="fa-solid fa-code"></i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div> -->
+                        <!-- </div>
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#project-carousel" data-bs-slide="prev">
@@ -232,7 +304,7 @@
                     <span class="visually-hidden">Next</span>
                 </button>
                 </div>
-            </section>
+            </section> -->
 
 
         <section id="about" class="container-fluid bg-dark py-4">
@@ -272,12 +344,21 @@
                         </p>
                     </div>
                 </div>
-                <article id="contact-btn-container" class="mt-2">
+                <article id="contact-btn-container" class="my-2">
                     <div>
                         <button class="contact-btn btn text-light btn-feature" data-bs-toggle="modal" data-bs-target="#contactModal">Say Hello</button>
                     </div>
                 </article>
 
+                <div class="container-fluid">
+                    <div class="d-flex justify-content-center">
+                        <a href="https://www.buymeacoffee.com/brylie" target="#_blank">
+                            <button id="coffeeBtn" class="btn btn-danger text-light">
+                                coffee? 🤎
+                            </button>
+                        </a>
+                    </div>
+                </div>
                
             </div>
         </section>
@@ -285,7 +366,7 @@
 
         <footer class="container-fluid bg-dark pt-5">
             <div id="footer-div" class="containger-lg bg-primary py-3">
-                <div class="container-lg mb-5">
+                <div class="container-lg mb-3 mt-2">
                     <div class="d-flex justify-content-center">
                         <a class="social-span" href="#intro" role="button" >
                             <div class="d-flex justify-content-center align-items-center bg-light text-dark p-2 social-span">
@@ -296,9 +377,9 @@
                         </a>
                     </div>
                 </div>
-                <div class="social-wrapper container">
+                <!-- <div class="social-wrapper container">
                     <div class="row">
-                    <!-- github link -->
+               
                         <article class="col-3">
                             <div class="social-container d-flex justify-content-center">
                                 <a class="social-link rounded-circle text-dark" href="https://github.com/bryliebaird" target="#_blank" role="button">                                            
@@ -307,7 +388,6 @@
                             </div>
                         </article>
 
-                    <!-- linkedin btn -->
                         <article class="col-3">
                             <div class="social-container d-flex justify-content-center">
                                 <a class="social-link rounded-circle text-dark" href="https://www.linkedin.com/in/brylie-baird/" target="#_blank" role="button">                                            
@@ -316,7 +396,6 @@
                             </div>
                         </article>
 
-                    <!-- instagram btn -->
                         <article class="col-3">
                             <div class="social-container d-flex justify-content-center">
                                 <a class="social-link rounded-circle text-dark" data-bs-toggle="modal" data-bs-target="#socialModal">                                       
@@ -325,7 +404,6 @@
                             </div>
                         </article>
 
-                    <!-- twitter btn -->
                         <article class="col-3">
                             <div class="social-container d-flex justify-content-center">           
                                 <a class="social-link rounded-circle text-dark" data-bs-toggle="modal" data-bs-target="#socialModal">                                       
@@ -335,9 +413,14 @@
                         </article>
             
                     </div>
-                </div>
+                </div> -->
                 <div class="container-lg text-center mt-3">
-                    <p class="lead mb-0">Copyright&nbsp;<span id="year">####</span></p>
+                    <p id="name-text" class="text-dark mb-0">Designed & Developed by&nbsp;
+                        <span id="name-span">Brylie Baird 🖤</span>
+                    </p>
+                    <!-- <p class="lead mb-0">Copyright&nbsp;
+                        <span id="year">####</span>
+                    </p> -->
                 </div>
             </div>
         </footer>
