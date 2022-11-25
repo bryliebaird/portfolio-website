@@ -419,6 +419,20 @@ input {
 }
 
 
+
+
+#twSpan {
+    animation: blinker 1.25s linear infinite;
+}
+
+@keyframes blinker {
+    50%{
+        opacity: 0;
+    }
+}
+
+
+
 .project-link:hover, .social-link:hover {
     background: #5793ac; 
     text-decoration: none;
