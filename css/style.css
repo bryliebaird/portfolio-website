@@ -65,7 +65,8 @@ h3 {
 
 h4 {
     letter-spacing: .08rem;
-    font-weight: 600;
+    font-weight: 500;
+    font-family: "barlow";
 }
 
 p {
@@ -96,23 +97,29 @@ hr {
     text-transform: uppercase;
     font-weight: 500;
     background: #f86d58;
+    border: transparent;
 }
 
-.btn:hover{
-    /* background: #f86d58;
-    border-color: #f86d58; */
-}
-
-.article-btn {
+#contact-btn-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-button {
-    width: 100%;
+.contact-btn {
+    transition: 0.3s ease-out;
 }
+
+.btn-cover:hover{
+    background: #f87b66;
+    border-radius: 999em;
+    transition: 0.3s ease-in;
+}
+
+
+
+
 
 /* ############### Navbar + Intro ################## */
 nav {
@@ -267,13 +274,23 @@ nav {
     box-shadow: 0 0 2rem 0.063rem #1b0739;
 }
 
+#contactModalLabel{
+    color: #000;
+    font-family: "Rubik";
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    opacity: 0.6;
+}
+
 input {
     font-family: 'Montserrat', sans-serif;
     border-radius: 0;
 }
 
 .input-container, .input-group-text {
-    border-radius: 0;
+    /* border: 1.75px solid #1b0739; */
+    border: transparent;
 }
 
 .textarea-label {
@@ -282,6 +299,22 @@ input {
 
 .social-span {
     border-radius: 50%;
+}
+
+.social-modal {
+    border-radius: 12px;
+}
+
+#social-modal-text {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+#socialModalLabel {
+    font-family: "Rubik";
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #f86d58;
 }
 
 
@@ -366,8 +399,6 @@ input {
 }
 
 
-
-
 .project-link, .social-link {
     background: #f86d58;
     display: flex;
@@ -384,7 +415,7 @@ input {
 .social-link {
     background: #fff9f1;
     width: 15%;
-    padding: 1rem;
+    padding: 1.125rem;
 }
 
 
@@ -393,6 +424,10 @@ input {
     text-decoration: none;
 }
 
+
+#contact-modal {
+    border-radius: 12px;
+}
 
 /* ==================================== MEDIA QUERIES ======================================= */
 

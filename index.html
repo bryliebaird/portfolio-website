@@ -89,7 +89,7 @@
                                     </div>
                                     <div class="d-flex justify-content-center">
                                         <div class="text-box text-center mb-3">
-                                            <h4 class="display-10 text-dark text-center mt-3">Guess the Word</h4>
+                                            <h4 class="text-secondary text-center mt-3">Guess the Word</h4>
                                             <p class="project-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                             <div class="d-flex justify-content-end">
                                             <!-- project #1, web link -->
@@ -110,7 +110,7 @@
                                 </div>
                                 <div class="d-flex justify-content-center">
                                     <div class="text-box text-center mb-3">
-                                        <h4 class="display-10 text-dark text-center mt-3">Unplugged Retreat</h4>
+                                        <h4 class="text-secondary text-center mt-3">Unplugged Retreat</h4>
                                         <p class="project-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                         <div class="d-flex justify-content-end">
                                         <!-- project #1, web link -->
@@ -131,7 +131,7 @@
                                 </div>
                                 <div class="d-flex justify-content-center">
                                     <div class="text-box text-center mb-3">
-                                        <h4 class="display-10 text-dark text-center mt-3">Github Repo Gallery</h4>
+                                        <h4 class="text-secondary text-center mt-3">Github Repo Gallery</h4>
                                         <p class="project-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                         <div class="d-flex justify-content-end">
                                             <!-- project #1, web link -->
@@ -158,7 +158,7 @@
                                     </div>
                                     <div class="d-flex justify-content-center">
                                         <div class="text-box text-center mb-3">
-                                            <h4 class="display-10 text-dark text-center mt-3">Relax App</h4>
+                                            <h4 class="text-secondary text-center mt-3">Relax App</h4>
                                             <p class="project-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                             <div class="d-flex justify-content-end">
                                                 <!-- project #1, web link -->
@@ -181,7 +181,7 @@
                                     </div>
                                     <div class="d-flex justify-content-center">
                                         <div class="text-box text-center mb-3">
-                                            <h4 class="display-10 text-dark text-center mt-3">Monuseal</h4>
+                                            <h4 class="text-secondary text-center mt-3">Monuseal</h4>
                                             <p class="project-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                             <div class="d-flex justify-content-end">
                                                 <!-- project #1, web link -->
@@ -204,7 +204,7 @@
                                     </div>
                                     <div class="d-flex justify-content-center">
                                         <div class="text-box text-center mb-3">
-                                            <h4 class="display-10 text-dark text-center mt-3">Digital Escape Room</h4>
+                                            <h4 class="text-secondary text-center mt-3">Digital Escape Room</h4>
                                             <p class="project-text text-center">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                             <div class="d-flex justify-content-end">
                                                 <!-- project #1, web link -->
@@ -272,9 +272,9 @@
                         </p>
                     </div>
                 </div>
-                <article class="article-btn mt-2">
-                    <div class="btn-cover bg-dark">
-                        <button class="btn text-light btn-feature" data-bs-toggle="modal" data-bs-target="#contactModal">Say Hello</button>
+                <article id="contact-btn-container" class="mt-2">
+                    <div>
+                        <button class="contact-btn btn text-light btn-feature" data-bs-toggle="modal" data-bs-target="#contactModal">Say Hello</button>
                     </div>
                 </article>
 
@@ -347,10 +347,10 @@
         <!-- social media modal -->
         <div class="modal fade" id="socialModal" tabindex="-1" aria-labelledby="socialModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
+                <div class="modal-content social-modal bg-light p-3">
                     <div class="modal-body">
                         <h5 class="text-center" id="socialModalLabel">Coming Soon!</h5>                
-                        <p class="text-center">Thank you for your interest, Instagram and Twitter accounts will be coming soon! 😄</p>
+                        <p id="social-modal-text" class="text-center">Thank you for your interest, Instagram and Twitter accounts will be coming soon! 😄</p>
                         <div class="d-flex justify-content-center">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Return</button>
                         </div>
@@ -363,7 +363,7 @@
         <!-- contact form modal -->
         <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content bg-light p-3">
+                <div id="contact-modal" class="modal-content bg-primary p-3 border-rounded">
                     <div class="modal-body">
                         <div class="d-flex justify-content-between mb-4">
                             <h5 class="modal-title" id="contactModalLabel">Contact Today.</h5>
@@ -374,17 +374,17 @@
                                 <span class="input-group-text bg-dark">
                                     <i class="fa-solid fa-user fa-lg text-danger"></i>
                                 </span>
-                                <input id="userName" type="text" class="input-container form-control" aria-label="Username" aria-describedby="userName" placeholder="Name">
+                                <input id="userName" type="text" class="input-container form-control bg-light" aria-label="Username" aria-describedby="userName" placeholder="Name">
                             </div>
                             <div class="input-group mb-3">
                                 <span class="input-group-text bg-dark">
                                     <i class="fa-solid fa-envelope fa-lg text-danger"></i>
                                 </span>
-                                <input id="userEmail" type="email" class="input-container form-control" aria-label="Email" aria-describedby="userEmail" placeholder="Email Address">
+                                <input id="userEmail" type="email" class="input-container form-control bg-light" aria-label="Email" aria-describedby="userEmail" placeholder="Email Address">
                             </div>
                             <!-- user message -->
                             <div class="form-floating mb-3">
-                                <textarea class="input-container form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                                <textarea class="input-container form-control bg-light" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
                                 <label class="textarea-label" for="floatingTextarea">Comments</label>
                             </div>
                             <div class="d-flex justify-content-center">
