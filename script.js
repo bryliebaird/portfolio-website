@@ -10,7 +10,7 @@ function updateCopyright(){
    yearSpan.innerHTML = year;
 }
 
-// *** Event Listeners ***
+
 
 // =========== TYPEWRITER EFFECT ============ //
 
@@ -30,6 +30,15 @@ typewrite = () => {
         setTimeout(typewrite, twSpeed);
     }
 }
+
+
+console.log("hiii");
+
+// =========== PROJECT CARD HOVER EFFECT ============ //
+
+// *** Selectors ***
+
+
 
 
 // *** EVENT LISTENERS ***

@@ -435,6 +435,7 @@ input {
     transition: all 0.2s ease-in;
 }
 
+
 .project-text {
     font-size: 1.15rem;
 }
@@ -450,8 +451,7 @@ input {
 }
 
 #social-wrapper {
-    width: 60%;
-    background: pink;
+    width: 40%;   
 }
 
 .social-link {
@@ -460,7 +460,46 @@ input {
     padding: 1.125rem;
 }
 
+#projects-grid{
+    list-style: none;
+}
 
+.row {
+    display: flex;
+    justify-content:center;
+}
+
+.folder-svg {
+    width: 30%;
+}
+
+.project {
+    background:#483978;
+    margin: 0 12px 0 12px;
+}
+
+.skill-btn {
+    padding: 0 20px 0 20px;
+}
+
+.checkbox {
+    width: 15%;
+    background: #2DA3A9;
+}
+
+
+.skill-img {
+    width: 25%;
+}
+
+.project-title {
+    color: #fff9f1;
+    opacity: 0.9;
+}
+
+.sm-text {
+    font-size: 1rem;
+}
 
 
 #twSpan {
