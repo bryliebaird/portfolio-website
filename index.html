@@ -122,10 +122,10 @@
                                             </svg>
                                         </div>
                                         <div class="container d-flex justify-content-end align-items-center">
-                                            <a href="#" target="_blank">
+                                            <a href="https://github.com/bryliebaird/css-space-animation" target="_blank">
                                                 <i class="project-link fa-brands fa-github fa-lg"></i>
                                             </a>
-                                            <a href="https://bryliebaird.github.io/guess-the-word/?" target="_blank">
+                                            <a href="https://bryliebaird.github.io/css-space-animation/" target="_blank">
                                                 <i class="project-link fa-solid fa-arrow-up-right-from-square fa-md ms-3"></i>
                                             </a>
                                         </div>    
@@ -138,7 +138,6 @@
                                 <footer class="d-flex justify-content-start">
                                     <p class="text-light">HTML</p>
                                     <p class="text-light mx-3">CSS</p>
-                                    <p class="text-light">JavaScript</p>
                                 </footer>
                             </div>
                         </li>
@@ -221,7 +220,7 @@
                                             <a href="https://github.com/bryliebaird/relax-timer" target="_blank">
                                                 <i class="project-link fa-brands fa-github fa-lg"></i>
                                             </a>
-                                            <a href="#" target="_blank">
+                                            <a href="https://bryliebaird.github.io/relax-timer/" target="_blank">
                                                 <i class="project-link fa-solid fa-arrow-up-right-from-square fa-md ms-3"></i>
                                             </a>
                                         </div>    
@@ -320,27 +319,27 @@
             <ul id="skills-grid">
                 <div class="container mt-4">
                     <div class="row">
-                        <li onmouseover="changeSkill(this)" onmouseout="revertSkill(this)" class="skill-btn btn bg-light col-lg-3 mx-5">
+                        <li onmouseover="changeHtml(this)" onmouseout="originalHtml(this)" class="skill-btn btn bg-light col-lg-3 mx-5">
                             <div class="skill-content d-flex justify-content-between align-items-center">
-                                <img class="skill-img" src="/assets/1.svg">
+                                <img id="htmlSvg" class="skill-img" src="/assets/img/html-dark.svg">
                                 <p class="skill-title text-dark mb-0">HTML</p>
-                                <img class="checkmark-svg" src="/assets/checkmark2.svg">
+                                <img class="checkmark-svg" src="/assets/img/checkmark.svg">
                             </div>
                         </li>
 
-                        <li onmouseover="changeSkill(this)" onmouseout="revertSkill(this)" class="skill-btn btn bg-light col-lg-3 mx-5">
+                        <li onmouseover="changeCss(this)" onmouseout="originalCss(this)" class="skill-btn btn bg-light col-lg-3 mx-5">
                             <div class="skill d-flex justify-content-between align-items-center">
-                                <img class="skill-img" src="/assets/2.svg">
+                                <img id="cssSvg" class="skill-img" src="/assets/img/css-dark.svg">
                                 <p class="skill-title text-dark mb-0">CSS</p>
-                                <img class="checkmark-svg" src="/assets/checkmark2.svg">
+                                <img class="checkmark-svg" src="/assets/img/checkmark.svg">
                             </div>
                         </li>
 
-                        <li onmouseover="changeSkill(this)" onmouseout="revertSkill(this)" class="skill-btn btn bg-light col-lg-3">
+                        <li onmouseover="changeJs(this)" onmouseout="originalJs(this)" class="skill-btn btn bg-light col-lg-3">
                             <div class="skill d-flex justify-content-between align-items-center">
-                                <img class="skill-img" src="/assets/3.svg">
-                                <p class="skill-title text-dark mb-0"></p>
-                                <img class="checkmark-svg" src="/assets/checkmark2.svg">
+                                <img id="jsSvg" class="skill-img" src="/assets/img/javascript-dark.svg">
+                                <p class="skill-title text-dark mb-0">Javascript</p>
+                                <img class="checkmark-svg" src="/assets/img/checkmark.svg">
                             </div>
                         </li>
                     </div>
@@ -348,27 +347,27 @@
 
             <div class="container-lg">
                 <div class="row mt-5">
-                    <li onmouseover="changeSkill(this)" onmouseout="revertSkill(this)"  class="skill-btn btn bg-light col-lg-3">
+                    <li onmouseover="changeReact(this)" onmouseout="originalReact(this)"  class="skill-btn btn bg-light col-lg-3">
                         <div class="skill d-flex justify-content-between align-items-center">
-                            <img class="skill-img" src="/assets/4.svg">
+                            <img id="reactSvg" class="skill-img" src="/assets/img/react-dark.svg">
                             <p class="skill-title text-dark mb-0">React</p>
-                            <img class="checkmark-svg" src="/assets/checkmark2.svg">
+                            <img class="checkmark-svg" src="/assets/img/checkmark.svg">
                         </div>
                     </li>
 
-                    <li onmouseover="changeSkill(this)" onmouseout="revertSkill(this)"  class="skill-btn btn bg-light col-lg-3 mx-5">
+                    <li onmouseover="changeNode(this)" onmouseout="originalNode(this)"  class="skill-btn btn bg-light col-lg-3 mx-5">
                         <div class="skill d-flex justify-content-between align-items-center">
-                            <img class="skill-img" src="/assets/5.svg">
+                            <img id="nodeSvg" class="skill-img" src="/assets/img/node-dark.svg">
                             <p class="skill-title text-dark mb-0">Node</p>
-                            <img class="checkmark-svg" src="/assets/checkmark2.svg">
+                            <img class="checkmark-svg" src="/assets/img/checkmark.svg">
                         </div>
                     </li>
 
-                    <li onmouseover="changeSkill(this)" onmouseout="revertSkill(this)"  class="skill-btn btn bg-light col-lg-3">
+                    <li onmouseover="changeGit(this)" onmouseout="originalGit(this)"  class="skill-btn btn bg-light col-lg-3">
                         <div class="skill d-flex justify-content-between align-items-center">
-                            <img class="skill-img" src="/assets/6.svg">
+                            <img id="gitSvg" class="skill-img" src="/assets/img/git-dark.svg">
                             <p class="skill-title text-dark mb-0">Git</p>
-                            <img class="checkmark-svg" src="/assets/checkmark2.svg">
+                            <img class="checkmark-svg" src="/assets/img/checkmark.svg">
                         </div>
                     </li>
                 </div>
@@ -376,27 +375,27 @@
 
             <div class="container-lg">
                 <div class="row mt-5">
-                    <li onmouseover="changeSkill(this)" onmouseout="revertSkill(this)"  class="skill-btn btn bg-light col-lg-3">
+                    <li onmouseover="changeBs(this)" onmouseout="originalBs(this)" class="skill-btn btn bg-light col-lg-3">
                         <div class="skill d-flex justify-content-between align-items-center">
-                            <img class="skill-img" src="/assets/4.svg">
-                            <p class="skill-title text-dark mb-0">React</p>
-                            <img class="checkmark-svg" src="/assets/checkmark2.svg">
+                            <img id="bsSvg" class="skill-img" src="/assets/img/bootstrap-dark.svg">
+                            <p class="skill-title text-dark mb-0">Bootstrap</p>
+                            <img class="checkmark-svg" src="/assets/img/checkmark.svg">
                         </div>
                     </li>
 
-                    <li onmouseover="changeSkill(this)" onmouseout="revertSkill(this)"  class="skill-btn btn bg-light col-lg-3 mx-5">
+                    <li onmouseover="changeMongo(this)" onmouseout="originalMongo(this)"  class="skill-btn btn bg-light col-lg-3 mx-5">
                         <div class="skill d-flex justify-content-between align-items-center">
-                            <img class="skill-img" src="/assets/5.svg">
-                            <p class="skill-title text-dark mb-0">Node</p>
-                            <img class="checkmark-svg" src="/assets/checkmark2.svg">
+                            <img id="mongoSvg" class="skill-img" src="/assets/img/mongo-dark.svg">
+                            <p class="skill-title text-dark mb-0">MongoDB</p>
+                            <img class="checkmark-svg" src="/assets/img/checkmark.svg">
                         </div>
                     </li>
 
-                    <li onmouseover="changeSkill(this)" onmouseout="revertSkill(this)"  class="skill-btn btn bg-light col-lg-3">
+                    <li onmouseover="changeSass(this)" onmouseout="originalSass(this)"  class="skill-btn btn bg-light col-lg-3">
                         <div class="skill d-flex justify-content-between align-items-center">
-                            <img class="skill-img" src="/assets/6.svg">
-                            <p class="skill-title text-dark mb-0">Git</p>
-                            <img class="checkmark-svg" src="/assets/checkmark2.svg">
+                            <img id="sassSvg" class="skill-img" src="/assets/img/sass-dark.svg">
+                            <p class="skill-title text-dark mb-0">SASS</p>
+                            <img class="checkmark-svg" src="/assets/img/checkmark.svg">
                         </div>
                     </li>
                 </div>

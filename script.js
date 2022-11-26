@@ -55,6 +55,122 @@ function projectStill(project){
     // document.querySelector(".project-title").style.color = "#fff9f1";
 }
 
+// #######################################################
+
+function changeHtml(skill){
+    let img = document.querySelector("#htmlSvg");
+    img.setAttribute("src", "/assets/img/html-light.svg");
+    skill.style.border = "3px solid #f86d58";
+}
+
+function originalHtml(skill){
+    let img = document.querySelector("#htmlSvg");
+    img.setAttribute("src", "/assets/img/html-dark.svg");
+    skill.style.border = "3px solid #fff9f1";
+}
+
+function changeCss(skill){
+    let img = document.querySelector("#cssSvg");
+    img.setAttribute("src", "/assets/img/css-light.svg");
+    skill.style.border = "3px solid #f86d58";
+}
+
+function originalCss(skill){
+    let img = document.querySelector("#cssSvg");
+    img.setAttribute("src", "/assets/img/css-dark.svg");
+    skill.style.border = "3px solid #fff9f1";
+}
+
+function changeJs(skill){
+    let img = document.querySelector("#jsSvg");
+    img.setAttribute("src", "/assets/img/javascript-light.svg");
+    skill.style.border = "3px solid #f86d58";
+}
+
+function originalJs(skill){
+    let img = document.querySelector("#jsSvg");
+    img.setAttribute("src", "/assets/img/javascript-dark.svg");
+    skill.style.border = "3px solid #fff9f1";
+}
+
+function changeReact(skill){
+    let img = document.querySelector("#reactSvg");
+    img.setAttribute("src", "/assets/img/react-light.svg");
+    skill.style.border = "3px solid #f86d58";
+}
+
+function originalReact(skill){
+    let img = document.querySelector("#reactSvg");
+    img.setAttribute("src", "/assets/img/react-dark.svg");
+    skill.style.border = "3px solid #fff9f1";
+}
+
+function changeNode(skill){
+    let img = document.querySelector("#nodeSvg");
+    img.setAttribute("src", "/assets/img/node-light.svg");
+    skill.style.border = "3px solid #f86d58";
+}
+
+function originalNode(skill){
+    let img = document.querySelector("#nodeSvg");
+    img.setAttribute("src", "/assets/img/node-dark.svg");
+    skill.style.border = "3px solid #fff9f1";
+}
+
+function changeGit(skill){
+    let img = document.querySelector("#gitSvg");
+    img.setAttribute("src", "/assets/img/git-light.svg");
+    skill.style.border = "3px solid #f86d58";
+}
+
+function originalGit(skill){
+    let img = document.querySelector("#gitSvg");
+    img.setAttribute("src", "/assets/img/git-dark.svg");
+    skill.style.border = "3px solid #fff9f1";
+}
+
+function changeBs(skill){
+    let img = document.querySelector("#bsSvg");
+    img.setAttribute("src", "/assets/img/bootstrap-light.svg");
+    skill.style.border = "3px solid #f86d58";
+}
+
+function originalBs(skill){
+    let img = document.querySelector("#bsSvg");
+    img.setAttribute("src", "/assets/img/bootstrap-dark.svg");
+    skill.style.border = "3px solid #fff9f1";
+}
+
+function changeMongo(skill){
+    let img = document.querySelector("#mongoSvg");
+    img.setAttribute("src", "/assets/img/mongo-light.svg");
+    skill.style.border = "3px solid #f86d58";
+}
+
+function originalMongo(skill){
+    let img = document.querySelector("#mongoSvg");
+    img.setAttribute("src", "/assets/img/mongo-dark.svg");
+    skill.style.border = "3px solid #fff9f1";
+}
+
+
+function changeSass(skill){
+    let img = document.querySelector("#sassSvg");
+    img.setAttribute("src", "/assets/img/sass-light.svg");
+    skill.style.border = "3px solid #f86d58";
+}
+
+function originalSass(skill){
+    let img = document.querySelector("#sassSvg");
+    img.setAttribute("src", "/assets/img/sass-dark.svg");
+    skill.style.border = "3px solid #fff9f1";
+}
+
+
+
+
+
+
 // *** EVENT LISTENERS ***
 window.addEventListener("load", typewrite);
 window.addEventListener("load", updateCopyright);
