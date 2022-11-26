@@ -57,124 +57,112 @@ function projectStill(project){
 
 // #######################################################
 
-function animateCheck(skill){
-    let check = document.querySelector("#htmlCheck");
-    check.classList.add("animate__animated", "animate__bounce");
-}
-
-function resetCheck(skill){
-    let check = document.querySelector("#htmlCheck");
-    check.classList.remove("animate__animated", "animate__bounce");
-}
-
-function changeHtml(skill){
-    let img = document.querySelector("#htmlSvg");
-    img.setAttribute("src", "/assets/img/html-light.svg");
+function mouseoverHTML(skill){
     skill.style.border = "3px solid #f86d58";
-    
+    document.querySelector("#htmlCheck").classList.add("animate__animated", "animate__bounce");
+    document.querySelector("#htmlSvg").setAttribute("src", "/assets/img/html-light.svg");
 }
 
-function originalHtml(skill){
-    let img = document.querySelector("#htmlSvg");
-    img.setAttribute("src", "/assets/img/html-dark.svg");
+function mouseoutHTML(skill){
     skill.style.border = "3px solid #fff9f1";
+    document.querySelector("#htmlSvg").setAttribute("src", "/assets/img/html-dark.svg");
+    document.querySelector("#htmlCheck").classList.remove("animate__animated", "animate__bounce");  
 }
 
-function changeCss(skill){
-    let img = document.querySelector("#cssSvg");
-    img.setAttribute("src", "/assets/img/css-light.svg");
+function mouseoverCSS(skill){
     skill.style.border = "3px solid #f86d58";
+    document.querySelector("#cssSVG").setAttribute("src", "/assets/img/css-light.svg");
+    document.querySelector("#cssCheck").classList.add("animate__animated", "animate__bounce");
 }
 
-function originalCss(skill){
-    let img = document.querySelector("#cssSvg");
-    img.setAttribute("src", "/assets/img/css-dark.svg");
+function mouseoutCSS(skill){
     skill.style.border = "3px solid #fff9f1";
+    document.querySelector("#cssSVG").setAttribute("src", "/assets/img/css-dark.svg");
+    document.querySelector("#cssCheck").classList.remove("animate__animated", "animate__bounce");
 }
 
-function changeJs(skill){
-    let img = document.querySelector("#jsSvg");
-    img.setAttribute("src", "/assets/img/javascript-light.svg");
+function mouseoverJS(skill){
     skill.style.border = "3px solid #f86d58";
+    document.querySelector("#jsSVG").setAttribute("src", "/assets/img/javascript-light.svg");
+    document.querySelector("#jsCheck").classList.add("animate__animated", "animate__bounce");
 }
 
-function originalJs(skill){
-    let img = document.querySelector("#jsSvg");
-    img.setAttribute("src", "/assets/img/javascript-dark.svg");
+function mouseoutJS(skill){
     skill.style.border = "3px solid #fff9f1";
+    document.querySelector("#jsSVG").setAttribute("src", "/assets/img/javascript-dark.svg");
+    document.querySelector("#jsCheck").classList.remove("animate__animated", "animate__bounce");
 }
 
-function changeReact(skill){
-    let img = document.querySelector("#reactSvg");
-    img.setAttribute("src", "/assets/img/react-light.svg");
+function mouseoverReact(skill){
     skill.style.border = "3px solid #f86d58";
+    document.querySelector("#reactSVG").setAttribute("src", "/assets/img/react-light.svg");
+    document.querySelector("#reactCheck").classList.add("animate__animated", "animate__bounce");
 }
 
-function originalReact(skill){
-    let img = document.querySelector("#reactSvg");
-    img.setAttribute("src", "/assets/img/react-dark.svg");
+function mouseoutReact(skill){
     skill.style.border = "3px solid #fff9f1";
+    document.querySelector("#reactSVG").setAttribute("src", "/assets/img/react-dark.svg");
+    document.querySelector("#reactCheck").classList.remove("animate__animated", "animate__bounce");
 }
 
-function changeNode(skill){
-    let img = document.querySelector("#nodeSvg");
-    img.setAttribute("src", "/assets/img/node-light.svg");
+function mouseoverNode(skill){
     skill.style.border = "3px solid #f86d58";
+    document.querySelector("#nodeSVG").setAttribute("src", "/assets/img/node-light.svg");
+    document.querySelector("#nodeCheck").classList.add("animate__animated", "animate__bounce");
 }
 
-function originalNode(skill){
-    let img = document.querySelector("#nodeSvg");
-    img.setAttribute("src", "/assets/img/node-dark.svg");
+function mouseoutNode(skill){
     skill.style.border = "3px solid #fff9f1";
+    document.querySelector("#nodeSVG").setAttribute("src", "/assets/img/node-dark.svg");
+    document.querySelector("#nodeCheck").classList.remove("animate__animated", "animate__bounce");
 }
 
-function changeGit(skill){
-    let img = document.querySelector("#gitSvg");
-    img.setAttribute("src", "/assets/img/git-light.svg");
+function mouseoverGit(skill){
     skill.style.border = "3px solid #f86d58";
+    document.querySelector("#gitSVG").setAttribute("src", "/assets/img/git-light.svg");
+    document.querySelector("#gitCheck").classList.add("animate__animated", "animate__bounce");
 }
 
-function originalGit(skill){
-    let img = document.querySelector("#gitSvg");
-    img.setAttribute("src", "/assets/img/git-dark.svg");
+function mouseoutGit(skill){
     skill.style.border = "3px solid #fff9f1";
+    document.querySelector("#gitSVG").setAttribute("src", "/assets/img/git-dark.svg");
+    document.querySelector("#gitCheck").classList.remove("animate__animated", "animate__bounce");
 }
 
-function changeBs(skill){
-    let img = document.querySelector("#bsSvg");
-    img.setAttribute("src", "/assets/img/bootstrap-light.svg");
+function mouseoverBS(skill){
     skill.style.border = "3px solid #f86d58";
+    document.querySelector("#bsSVG").setAttribute("src", "/assets/img/bootstrap-light.svg");
+    document.querySelector("#bsCheck").classList.add("animate__animated", "animate__bounce");
 }
 
-function originalBs(skill){
-    let img = document.querySelector("#bsSvg");
-    img.setAttribute("src", "/assets/img/bootstrap-dark.svg");
+function mouseoutBS(skill){
     skill.style.border = "3px solid #fff9f1";
+    document.querySelector("#bsSVG").setAttribute("src", "/assets/img/bootstrap-dark.svg");
+    document.querySelector("#bsCheck").classList.remove("animate__animated", "animate__bounce");
 }
 
-function changeMongo(skill){
-    let img = document.querySelector("#mongoSvg");
-    img.setAttribute("src", "/assets/img/mongo-light.svg");
+function mouseoverMongo(skill){
     skill.style.border = "3px solid #f86d58";
+    document.querySelector("#mongoSVG").setAttribute("src", "/assets/img/mongo-light.svg");
+    document.querySelector("#mongoCheck").classList.add("animate__animated", "animate__bounce");
 }
 
-function originalMongo(skill){
-    let img = document.querySelector("#mongoSvg");
-    img.setAttribute("src", "/assets/img/mongo-dark.svg");
+function mouseoutMongo(skill){
     skill.style.border = "3px solid #fff9f1";
+    document.querySelector("#mongoSVG").setAttribute("src", "/assets/img/mongo-dark.svg");
+    document.querySelector("#mongoCheck").classList.remove("animate__animated", "animate__bounce");
 }
 
-
-function changeSass(skill){
-    let img = document.querySelector("#sassSvg");
-    img.setAttribute("src", "/assets/img/sass-light.svg");
+function mouseoverSass(skill){
     skill.style.border = "3px solid #f86d58";
+    document.querySelector("#sassSVG").setAttribute("src", "/assets/img/sass-light.svg");
+    document.querySelector("#sassCheck").classList.add("animate__animated", "animate__bounce");
 }
 
-function originalSass(skill){
-    let img = document.querySelector("#sassSvg");
-    img.setAttribute("src", "/assets/img/sass-dark.svg");
+function mouseoutSass(skill){
     skill.style.border = "3px solid #fff9f1";
+    document.querySelector("#sassSVG").setAttribute("src", "/assets/img/sass-dark.svg");
+    document.querySelector("#sassCheck").classList.remove("animate__animated", "animate__bounce");
 }
 
 
