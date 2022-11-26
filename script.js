@@ -32,14 +32,28 @@ typewrite = () => {
 }
 
 
-console.log("hiii");
 
 // =========== PROJECT CARD HOVER EFFECT ============ //
 
-// *** Selectors ***
+function changeSkill(btn){
+    btn.style.border = "3px solid #f86d58";
+}
+
+function revertSkill(btn) {
+    btn.style.border = "3px solid #fff9f1";
+}
 
 
 
+function projectBounce(project){
+    project.classList.add("animate__animated", "animate__pulse");
+    // document.querySelector(".project-title").style.color = "#64ffda";
+}
+
+function projectStill(project){
+    project.classList.remove("animate__animated", "animate__pulse");
+    // document.querySelector(".project-title").style.color = "#fff9f1";
+}
 
 // *** EVENT LISTENERS ***
 window.addEventListener("load", typewrite);

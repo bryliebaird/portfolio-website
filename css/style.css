@@ -353,6 +353,7 @@ input {
 .project-title{
     font-weight: 600;
     font-size: 1.65rem;
+    transition: 
 }
 
 .project-btn-cover {
@@ -363,6 +364,9 @@ input {
     border-right: 2px solid #1b0739;
 }
 
+.project {
+    border: 1px solid #1b0739;
+}
 
 .project-btn {
     width: 100%;
@@ -372,15 +376,13 @@ input {
 
 
 .project-link {
-    color: #1b0739;
-    width: 100%;
-    height: 100%;
+    color: #fff;
+    opacity: 0.75;
 }
 
 .project-link:hover {
-    background: #f86d58;
-    text-decoration: none;
-    color: #fff;
+    color: #f86d58;
+    /* text-decoration: none; */
 }
 
 
@@ -441,7 +443,7 @@ input {
 }
 
 
-.project-link, .social-link {
+.social-link {
     background: #f86d58;
     display: flex;
     flex-direction: column;
@@ -479,14 +481,29 @@ input {
 }
 
 .skill-btn {
+    border: 3px solid #fbefdf;
     padding: 0 20px 0 20px;
 }
 
+
+
+
 .checkbox {
-    width: 15%;
+    width: 20px;
     background: #2DA3A9;
 }
 
+.checkmark-svg {
+    width: 22%;
+    overflow: visible;
+}
+
+.skill-title {
+    font-family: "rubik";
+    font-size: 22px;
+    font-weight: 500;
+    margin-right: 22%
+}
 
 .skill-img {
     width: 25%;
@@ -495,6 +512,7 @@ input {
 .project-title {
     color: #fff9f1;
     opacity: 0.9;
+    transition: all 0.5s ease-in;
 }
 
 .sm-text {
