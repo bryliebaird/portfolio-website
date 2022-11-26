@@ -317,17 +317,17 @@
                
             </div>
             <ul id="skills-grid">
-                <div class="container mt-4">
+                <div class="container-lg mt-4">
                     <div class="row">
-                        <li onmouseover="changeHtml(this)" onmouseout="originalHtml(this)" class="skill-btn btn bg-light col-lg-3 mx-5">
+                        <li onmouseover="changeHtml(this), animateCheck(this)" onmouseout="originalHtml(this), resetCheck(this)" class="skill-pill bg-light col-lg-3 ">
                             <div class="skill-content d-flex justify-content-between align-items-center">
                                 <img id="htmlSvg" class="skill-img" src="/assets/img/html-dark.svg">
                                 <p class="skill-title text-dark mb-0">HTML</p>
-                                <img class="checkmark-svg" src="/assets/img/checkmark.svg">
+                                <img id="htmlCheck" class="checkmark-svg" src="/assets/img/checkmark.svg">
                             </div>
                         </li>
 
-                        <li onmouseover="changeCss(this)" onmouseout="originalCss(this)" class="skill-btn btn bg-light col-lg-3 mx-5">
+                        <li onmouseover="changeCss(this)" onmouseout="originalCss(this)" class="skill-pill bg-light col-lg-3 mx-5">
                             <div class="skill d-flex justify-content-between align-items-center">
                                 <img id="cssSvg" class="skill-img" src="/assets/img/css-dark.svg">
                                 <p class="skill-title text-dark mb-0">CSS</p>
@@ -335,7 +335,7 @@
                             </div>
                         </li>
 
-                        <li onmouseover="changeJs(this)" onmouseout="originalJs(this)" class="skill-btn btn bg-light col-lg-3">
+                        <li onmouseover="changeJs(this)" onmouseout="originalJs(this)" class="skill-pill bg-light col-lg-3">
                             <div class="skill d-flex justify-content-between align-items-center">
                                 <img id="jsSvg" class="skill-img" src="/assets/img/javascript-dark.svg">
                                 <p class="skill-title text-dark mb-0">Javascript</p>
@@ -343,11 +343,9 @@
                             </div>
                         </li>
                     </div>
-                </div>
 
-            <div class="container-lg">
                 <div class="row mt-5">
-                    <li onmouseover="changeReact(this)" onmouseout="originalReact(this)"  class="skill-btn btn bg-light col-lg-3">
+                    <li onmouseover="changeReact(this)" onmouseout="originalReact(this)"  class="skill-pill bg-light col-lg-3">
                         <div class="skill d-flex justify-content-between align-items-center">
                             <img id="reactSvg" class="skill-img" src="/assets/img/react-dark.svg">
                             <p class="skill-title text-dark mb-0">React</p>
@@ -355,7 +353,7 @@
                         </div>
                     </li>
 
-                    <li onmouseover="changeNode(this)" onmouseout="originalNode(this)"  class="skill-btn btn bg-light col-lg-3 mx-5">
+                    <li onmouseover="changeNode(this)" onmouseout="originalNode(this)"  class="skill-pill bg-light col-lg-3 mx-5">
                         <div class="skill d-flex justify-content-between align-items-center">
                             <img id="nodeSvg" class="skill-img" src="/assets/img/node-dark.svg">
                             <p class="skill-title text-dark mb-0">Node</p>
@@ -363,43 +361,40 @@
                         </div>
                     </li>
 
-                    <li onmouseover="changeGit(this)" onmouseout="originalGit(this)"  class="skill-btn btn bg-light col-lg-3">
+                    <li onmouseover="changeGit(this)" onmouseout="originalGit(this)"  class="skill-pill bg-light col-lg-3">
                         <div class="skill d-flex justify-content-between align-items-center">
                             <img id="gitSvg" class="skill-img" src="/assets/img/git-dark.svg">
                             <p class="skill-title text-dark mb-0">Git</p>
                             <img class="checkmark-svg" src="/assets/img/checkmark.svg">
                         </div>
                     </li>
-                </div>
-            </ul>
+                
+                    <div class="row mt-5">
+                        <li onmouseover="changeBs(this)" onmouseout="originalBs(this)" class="skill-pill bg-light col-lg-3">
+                            <div class="skill d-flex justify-content-between align-items-center">
+                                <img id="bsSvg" class="skill-img" src="/assets/img/bootstrap-dark.svg">
+                                <p class="skill-title text-dark mb-0">Bootstrap</p>
+                                <img class="checkmark-svg" src="/assets/img/checkmark.svg">
+                            </div>
+                        </li>
 
-            <div class="container-lg">
-                <div class="row mt-5">
-                    <li onmouseover="changeBs(this)" onmouseout="originalBs(this)" class="skill-btn btn bg-light col-lg-3">
-                        <div class="skill d-flex justify-content-between align-items-center">
-                            <img id="bsSvg" class="skill-img" src="/assets/img/bootstrap-dark.svg">
-                            <p class="skill-title text-dark mb-0">Bootstrap</p>
-                            <img class="checkmark-svg" src="/assets/img/checkmark.svg">
-                        </div>
-                    </li>
+                        <li onmouseover="changeMongo(this)" onmouseout="originalMongo(this)"  class="skill-pill bg-light col-lg-3 mx-5">
+                            <div class="skill d-flex justify-content-between align-items-center">
+                                <img id="mongoSvg" class="skill-img" src="/assets/img/mongo-dark.svg">
+                                <p class="skill-title text-dark mb-0">MongoDB</p>
+                                <img class="checkmark-svg" src="/assets/img/checkmark.svg">
+                            </div>
+                        </li>
 
-                    <li onmouseover="changeMongo(this)" onmouseout="originalMongo(this)"  class="skill-btn btn bg-light col-lg-3 mx-5">
-                        <div class="skill d-flex justify-content-between align-items-center">
-                            <img id="mongoSvg" class="skill-img" src="/assets/img/mongo-dark.svg">
-                            <p class="skill-title text-dark mb-0">MongoDB</p>
-                            <img class="checkmark-svg" src="/assets/img/checkmark.svg">
-                        </div>
-                    </li>
-
-                    <li onmouseover="changeSass(this)" onmouseout="originalSass(this)"  class="skill-btn btn bg-light col-lg-3">
-                        <div class="skill d-flex justify-content-between align-items-center">
-                            <img id="sassSvg" class="skill-img" src="/assets/img/sass-dark.svg">
-                            <p class="skill-title text-dark mb-0">SASS</p>
-                            <img class="checkmark-svg" src="/assets/img/checkmark.svg">
-                        </div>
-                    </li>
-                </div>
-            </ul>
+                        <li onmouseover="changeSass(this)" onmouseout="originalSass(this)"  class="skill-pill bg-light col-lg-3">
+                            <div class="skill d-flex justify-content-between align-items-center">
+                                <img id="sassSvg" class="skill-img" src="/assets/img/sass-dark.svg">
+                                <p class="skill-title text-dark mb-0">SASS</p>
+                                <img class="checkmark-svg" src="/assets/img/checkmark.svg">
+                            </div>
+                        </li>
+                    </div>
+                </ul>
           
         </section>
 

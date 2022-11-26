@@ -353,7 +353,6 @@ input {
 .project-title{
     font-weight: 600;
     font-size: 1.65rem;
-    transition: 
 }
 
 .project-btn-cover {
@@ -462,7 +461,7 @@ input {
     padding: 1.125rem;
 }
 
-#projects-grid{
+#projects-grid, #skills-grid{
     list-style: none;
 }
 
@@ -480,9 +479,10 @@ input {
     margin: 0 12px 0 12px;
 }
 
-.skill-btn {
+.skill-pill {
     border: 3px solid #fbefdf;
     padding: 0 20px 0 20px;
+    border-radius: 999em;
 }
 
 
@@ -505,7 +505,7 @@ input {
 
 .skill-title {
     font-family: "rubik";
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 500;
     margin-right: 22%
 }

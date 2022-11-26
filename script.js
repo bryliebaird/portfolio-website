@@ -57,10 +57,21 @@ function projectStill(project){
 
 // #######################################################
 
+function animateCheck(skill){
+    let check = document.querySelector("#htmlCheck");
+    check.classList.add("animate__animated", "animate__bounce");
+}
+
+function resetCheck(skill){
+    let check = document.querySelector("#htmlCheck");
+    check.classList.remove("animate__animated", "animate__bounce");
+}
+
 function changeHtml(skill){
     let img = document.querySelector("#htmlSvg");
     img.setAttribute("src", "/assets/img/html-light.svg");
     skill.style.border = "3px solid #f86d58";
+    
 }
 
 function originalHtml(skill){
