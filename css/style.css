@@ -163,7 +163,21 @@ nav {
     transition: 0.3s ease-in;
 }
 
+#logo-one:hover, #logo-two:hover {
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: 1;
+    animation-timing-function: linear; 
+}
 
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 
 /* ############### Project Cards ################## */
 .card {
@@ -179,6 +193,32 @@ nav {
     transform: rotateY(180deg);
 }
 
+#footer-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff9f1;
+    border-radius: 50%;
+}
+
+.social {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-icon{
+    color: #161b22;
+}
 
 
 /* ================================= */
@@ -294,9 +334,7 @@ input {
     font-family: 'Montserrat', sans-serif;
 }
 
-.social-span {
-    border-radius: 50%;
-}
+
 
 .social-modal {
     border-radius: 12px;
@@ -441,25 +479,23 @@ input {
     font-size: 1.15rem;
 }
 
-
-.social-link {
-    background: #f86d58;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s;
-}
-
 #social-wrapper {
     width: 40%;   
 }
 
-.social-link {
-    background: #fff9f1;
-    width: 15%;
-    padding: 1.125rem;
+.social-icon {
+    transition: 0.3s;
 }
+
+.social-icon:hover {
+    color: #5793ac; 
+    text-decoration: none;
+}
+
+
+
+
+
 
 #projects-grid, #skills-grid{
     list-style: none;
@@ -543,10 +579,7 @@ input {
 
 
 
-.social-link:hover {
-    background: #5793ac; 
-    text-decoration: none;
-}
+
 
 
 #contact-modal {
