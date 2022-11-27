@@ -35,27 +35,27 @@ typewrite = () => {
 
 // =========== PROJECT CARD HOVER EFFECT ============ //
 
-function changeSkill(btn){
-    btn.style.border = "3px solid #f86d58";
-}
-
-function revertSkill(btn) {
-    btn.style.border = "3px solid #fff9f1";
-}
-
-
-
-function projectBounce(project){
+function mouseoverProject (project){
+    let title = project.getElementsByClassName("project-title");
+    title[0].classList.add("project-title-hover");
     project.classList.add("animate__animated", "animate__pulse");
-    // document.querySelector(".project-title").style.color = "#64ffda";
 }
 
-function projectStill(project){
+function mouseoutProject(project){
+    let title = project.getElementsByClassName("project-title");
+    title[0].classList.remove("project-title-hover");
     project.classList.remove("animate__animated", "animate__pulse");
-    // document.querySelector(".project-title").style.color = "#fff9f1";
 }
+
 
 // #######################################################
+
+
+// function mouseoverSkill(skill){
+//     let checkmark = document.getElementsByClassName("checkmark");
+//     checkmark[0].classList.add("animate__animated", "animate__bounce");
+//     let img = document.getElementsByClassName("skill-img");   
+// }
 
 function mouseoverHTML(skill){
     skill.style.border = "3px solid #f86d58";
