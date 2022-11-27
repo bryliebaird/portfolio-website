@@ -520,34 +520,30 @@ input {
 .skill {
     width: 100%;
     height: 100%;
-    padding: 0.5rem;
 }
 
 .skill-text {
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
-
-
-
-.checkbox {
-    width: 20px;
-    background: #2DA3A9;
-}
-
 .checkmark-svg {
-    width: 18%;
+    width: 12%;
     overflow: visible;
 }
 
 .skill-title {
     font-family: "rubik";
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
-    margin-right: 22%
+    margin-right: 15%;
+    text-align: center;
+}
+
+#js-skill-title {
+    margin-right: 10%;
 }
 
 .skill-img {
-    width: 20%;
+    width: 15%;
     transition: all 0.5s ease-in;
 }
 
@@ -614,6 +610,17 @@ input {
  /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) { 
 
+    .skill {
+        padding: 0.20rem;
+    }
+
+    .skill-img{
+        width: 25%;
+    }
+
+    .checkmark-svg {
+        width: 20%;
+    }
     .card-row {
         display: flex;
         flex-direction: column;
@@ -621,13 +628,6 @@ input {
         align-items: center;
     }
     
-    /* .card-wrapper {
-        width: 90%;
-        background: pink;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    } */
 
     .card:nth-child(2){
         margin-right: 35px;
