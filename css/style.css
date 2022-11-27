@@ -202,7 +202,7 @@ nav {
 }
 
 .social {
-    width: 30%;
+    width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -480,11 +480,6 @@ input {
     text-decoration: none;
 }
 
-
-
-
-
-
 #projects-grid, #skills-grid{
     list-style: none;
 }
@@ -498,11 +493,11 @@ input {
     width: 30%;
 }
 
-#skills-grid{
+/* #skills-grid{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+} */
 
 
 .project-content{
@@ -516,12 +511,9 @@ input {
 }
 
 .skill-pill {
-    border: 3px solid #fbefdf;
-    padding: 0 20px 0 20px;
+    border: 3px solid #fff9f1;
     border-radius: 999em;
 }
-
-
 
 .skill-text {
     font-size: .8rem;
@@ -535,7 +527,7 @@ input {
 }
 
 .checkmark-svg {
-    width: 22%;
+    width: 18%;
     overflow: visible;
 }
 
@@ -547,7 +539,7 @@ input {
 }
 
 .skill-img {
-    width: 25%;
+    width: 20%;
     transition: all 0.5s ease-in;
 }
 
