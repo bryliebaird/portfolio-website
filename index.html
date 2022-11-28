@@ -27,7 +27,9 @@
     </head>
     <body>
 
-        <!-- navbar -->
+<!-- ###########################################################-->
+<!--  Navbar   -->
+<!-- ###########################################################-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-links" aria-controls="nav-links" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,9 +37,6 @@
                 </button>
                 <div class="collapse navbar-collapse" id="nav-links">
                     <ul class="navbar-nav full-width d-flex justify-content-around">
-                        <!-- <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#intro">Home</a>
-                        </li> -->
                         <li class="nav-item">
                             <a class="nav-link" href="#projects-intro">Projects</a>
                         </li>
@@ -55,19 +54,24 @@
             </div>
         </nav>
 
-        <!-- intro section -->
+<!-- ###########################################################-->
+<!--  Intro Section   -->
+<!-- ###########################################################-->
         <section id="intro" class="container-fluid pb-5 mb-5 pb-3">
             <div id="intro-div" class="container-fluid bg-primary pb-5 mb-5">
                 <h1 class="text-light text-center">Brylie Baird</h1>
                 <h2 id="twText"class="text-light text-center"></h2>                 
             </div>
-        </div>
-        <div class="container-lg text-center">
-            <img id="logo-one" class="logo-img mb-4" src="assets/img/portfolio-logo.svg" alt="brylie baird logo">
-            <!-- <p id="intro-text" class="text-light mb-0">Hello, World! I'm Brylie Baird, a Front-End Web Developer based out of Austin, TX. Welcome to my page!</p> -->
-        </div>
-    </section>
+            </div>
+            <div class="container-lg text-center">
+                <img id="logo-one" class="logo-img mb-4" src="assets/img/portfolio-logo.svg" alt="brylie baird logo">
+                <!-- <p id="intro-text" class="text-light mb-0">Hello, World! I'm Brylie Baird, a Front-End Web Developer based out of Austin, TX. Welcome to my page!</p> -->
+            </div>
+        </section>
 
+<!-- ###########################################################-->
+<!--  Projects   -->
+<!-- ###########################################################-->
         <section id="projects-intro" class="container-fluid pt-5 mt-5 bg-dark">
             <div class="container-lg text-center">
                 <h3 class="text-light">Featured Projects</h3>
@@ -81,10 +85,10 @@
                 </div>
             </div>
         </section>
-        <section id="projects">
+        <section id="projects" class="mb-5 pb-3">
             <ul id="projects-grid" class="container-fluid mt-5">
                 <div class="row">
-                    <!-- ############################################################ -->
+                    <!-- Project #1 Guess the Word -->
                     <li onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded">
                         <div class="project-content">
                             <header>
@@ -98,7 +102,7 @@
                                         <a href="https://github.com/bryliebaird/guess-the-word" target="_blank">
                                             <i class="project-link fa-solid fa-code-branch fa-lg"></i>
                                         </a>
-                                        <a href="https://bryliebaird.github.io/guess-the-word/?" target="_blank">
+                                        <a href="https://bryliebaird.github.io/guess-the-word/" target="_blank">
                                             <i class="project-link fa-solid fa-arrow-up-right-from-square fa-md ms-3"></i>
                                         </a>
                                     </div>                          
@@ -114,7 +118,7 @@
                             </footer>
                         </div>
                     </li>
-                    <!-- ############################################################ -->
+                    <!-- Project #2 Pure CSS Space Animation -->
                     <li onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded">
                         <div class="project-content">
                             <header>
@@ -144,7 +148,7 @@
                             </footer>
                         </div>
                     </li>
-                    <!-- ############################################################ -->
+                    <!-- Project #3 Github Repo Gallery -->
                     <li onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded">
                         <div class="project-content">
                             <header>
@@ -155,7 +159,7 @@
                                         </svg>
                                     </div>
                                     <div class="container d-flex justify-content-end align-items-center">
-                                        <a href="https://github.com/bryliebaird/github-repo-gallery" target="_blank">
+                                        <a href="https://github.com/bryliebaird/guess-the-word" target="_blank">
                                             <i class="project-link fa-solid fa-code-branch fa-lg"></i>
                                         </a>
                                         <a href="https://bryliebaird.github.io/github-repo-gallery/?" target="_blank">
@@ -174,7 +178,7 @@
                             </footer>
                         </div>
                     </li>
-                    <!-- ############################################################ -->
+                    <!-- Project #4 Unplugged Retreat -->
                     <li onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded">
                         <div class="project-content">
                             <header>
@@ -205,7 +209,7 @@
                             </footer>
                         </div>
                     </li>
-                    <!-- ############################################################ -->
+                    <!-- Project #5 Mindfulness Timer -->
                     <li onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded">
                         <div class="project-content">
                             <header>
@@ -236,7 +240,7 @@
                             </footer>
                         </div>
                     </li>
-                    <!-- #################################################### -->
+                    <!-- Project #6 Pixel Art Mystery Picture -->
                     <li onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded">
                         <div class="project-content">
                             <header>
@@ -269,8 +273,9 @@
                 </ul>
         </section>
     
-    
-
+<!-- ###########################################################-->
+<!--  About -->
+<!-- ###########################################################-->
         <section id="about" class="container-fluid bg-dark py-5 my-5">
             <div class="container-lg text-center">
                 <h3 class="text-light">About</h3>
@@ -294,6 +299,9 @@
             </div>
         </section>
 
+<!-- ###########################################################-->
+<!--  Skills -->
+<!-- ###########################################################-->
         <section id="skills-intro" class="container-fluid bg-dark pt-5 mt-5 pb-1">
             <div class="container-lg text-center">
                 <h3 class="text-light">Skills</h3>
@@ -307,91 +315,89 @@
                 </div>
             </div>
         </section>
-            <section id="skills" class="container-fluid">
-                <ul class="skills-width container-fluid">
-                    <!-- <div id="skills-grid" class="container-fluid"> -->
-                        <div class="row">
-                            <li onmouseover="mouseoverHTML(this)" onmouseout="mouseoutHTML(this)" class="skill-pill bg-light col-10 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                <div class="skill d-flex justify-content-between align-items-center">
-                                    <img id="htmlSvg" class="skill-img" src="/assets/img/html-dark.svg">
-                                    <p class="skill-title text-dark mb-0">HTML</p>
-                                    <img id="htmlCheck" class="checkmark-svg" src="/assets/img/checkmark.svg">
-                                </div>
-                            </li>
-
-                            <li onmouseover="mouseoverCSS(this)" onmouseout="mouseoutCSS(this)" class="skill-pill bg-light col-10 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                <div class="skill d-flex justify-content-between align-items-center">
-                                    <img id="cssSVG" class="skill-img" src="/assets/img/css-dark.svg">
-                                    <p class="skill-title text-dark mb-0">CSS</p>
-                                    <img id="cssCheck" class="checkmark-svg" src="/assets/img/checkmark.svg">
-                                </div>
-                            </li>
-
-                            <li onmouseover="mouseoverJS(this)" onmouseout="mouseoutJS(this)" class="skill-pill bg-light col-10 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                <div class="skill d-flex justify-content-between align-items-center">
-                                    <img id="jsSVG" class="skill-img" src="/assets/img/javascript-dark.svg">
-                                    <p id="js-skill-title" class="skill-title text-dark mb-0">Javascript</p>
-                                    <img id="jsCheck" class="checkmark-svg" src="/assets/img/checkmark.svg">
-                                </div>
-                            </li>
-                    
-                        <li onmouseover="mouseoverReact(this)" onmouseout="mouseoutReact(this)"  class="skill-pill bg-light col-10 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                            <div class="skill d-flex justify-content-between align-items-center">
-                                <img id="reactSVG" class="skill-img" src="/assets/img/react-dark.svg">
-                                <p class="skill-title text-dark mb-0">React</p>
-                                <img id="reactCheck" class="checkmark-svg" src="/assets/img/checkmark.svg">
-                            </div>
-                        </li>
-
-                        <li onmouseover="mouseoverNode(this)" onmouseout="mouseoutNode(this)"  class="skill-pill bg-light col-10 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                            <div class="skill d-flex justify-content-between align-items-center">
-                                <img id="nodeSVG" class="skill-img" src="/assets/img/node-dark.svg">
-                                <p class="skill-title text-dark mb-0">Node</p>
-                                <img id="nodeCheck" class="checkmark-svg" src="/assets/img/checkmark.svg">
-                            </div>
-                        </li>
-
-                        <li onmouseover="mouseoverGit(this)" onmouseout="mouseoutGit(this)"  class="skill-pill bg-light col-10 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                            <div class="skill d-flex justify-content-between align-items-center">
-                                <img id="gitSVG" class="skill-img" src="/assets/img/git-dark.svg">
-                                <p class="skill-title text-dark mb-0">Git</p>
-                                <img id="gitCheck" class="checkmark-svg" src="/assets/img/checkmark.svg">
-                            </div>
-                        </li>
-                    
-                        
-                            <li onmouseover="mouseoverBS(this)" onmouseout="mouseoutBS(this)" class="skill-pill bg-light col-10 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                <div class="skill d-flex justify-content-between align-items-center">
-                                    <img id="bsSVG" class="skill-img" src="/assets/img/bootstrap-dark.svg">
-                                    <p class="skill-title text-dark mb-0">Bootstrap</p>
-                                    <img id="bsCheck" class="checkmark-svg" src="/assets/img/checkmark.svg">
-                                </div>
-                            </li>
-
-                            <li onmouseover="mouseoverMongo(this)" onmouseout="mouseoutMongo(this)"  class="skill-pill bg-light col-10 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                <div class="skill d-flex justify-content-between align-items-center">
-                                    <img id="mongoSVG" class="skill-img" src="/assets/img/mongo-dark.svg">
-                                    <p class="skill-title text-dark mb-0">MongoDB</p>
-                                    <img id="mongoCheck" class="checkmark-svg" src="/assets/img/checkmark.svg">
-                                </div>
-                            </li>
-
-                            <li onmouseover="mouseoverSass(this)" onmouseout="mouseoutSass(this)"  class="skill-pill bg-light col-10 col-sm-4 col-md-3 col-lg-3 col-xl-2">
-                                <div class="skill d-flex justify-content-between align-items-center">
-                                    <img id="sassSVG" class="skill-img" src="/assets/img/sass-dark.svg">
-                                    <p class="skill-title text-dark mb-0">SASS</p>
-                                    <img id="sassCheck" class="checkmark-svg" src="/assets/img/checkmark.svg">
-                                </div>
-                            </li>
+        <section id="skills" class="container-fluid">
+            <ul class="skills-grid container-fluid">
+                <div class="row">
+                    <!-- Skill #1 HTML -->
+                    <li onmouseover="mouseoverHTML(this)" onmouseout="mouseoutHTML(this)" class="skill-pill bg-light col-10 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <div class="skill d-flex justify-content-between align-items-center">
+                            <img id="htmlSvg" class="skill-img" src="/assets/img/html-dark.svg">
+                            <p class="skill-title text-dark mb-0">HTML</p>
+                            <img id="htmlCheck" class="checkmark-svg" src="/assets/img/checkmark.svg">
                         </div>
-                    </ul>
-                </section>
+                    </li>
+                    <!-- Skill #2 CSS -->
+                    <li onmouseover="mouseoverCSS(this)" onmouseout="mouseoutCSS(this)" class="skill-pill bg-light col-10 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <div class="skill d-flex justify-content-between align-items-center">
+                            <img id="cssSVG" class="skill-img" src="/assets/img/css-dark.svg">
+                            <p class="skill-title text-dark mb-0">CSS</p>
+                            <img id="cssCheck" class="checkmark-svg" src="/assets/img/checkmark.svg">
+                        </div>
+                    </li>
+                    <!-- Skill #3 Javascript -->
+                    <li onmouseover="mouseoverJS(this)" onmouseout="mouseoutJS(this)" class="skill-pill bg-light col-10 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <div class="skill d-flex justify-content-between align-items-center">
+                            <img id="jsSVG" class="skill-img" src="/assets/img/javascript-dark.svg">
+                            <p id="javascript-pill" class="skill-title text-dark mb-0">Javascript</p>
+                            <img id="jsCheck" class="checkmark-svg" src="/assets/img/checkmark.svg">
+                        </div>
+                    </li>
+                    <!-- Skill #4 React -->
+                    <li onmouseover="mouseoverReact(this)" onmouseout="mouseoutReact(this)"  class="skill-pill bg-light col-10 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <div class="skill d-flex justify-content-between align-items-center">
+                            <img id="reactSVG" class="skill-img" src="/assets/img/react-dark.svg">
+                            <p class="skill-title text-dark mb-0">React</p>
+                            <img id="reactCheck" class="checkmark-svg" src="/assets/img/checkmark.svg">
+                        </div>
+                    </li>
+                    <!-- Skill #5 Node.js-->
+                    <li onmouseover="mouseoverNode(this)" onmouseout="mouseoutNode(this)"  class="skill-pill bg-light col-10 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <div class="skill d-flex justify-content-between align-items-center">
+                            <img id="nodeSVG" class="skill-img" src="/assets/img/node-dark.svg">
+                            <p class="skill-title text-dark mb-0">Node.js</p>
+                            <img id="nodeCheck" class="checkmark-svg" src="/assets/img/checkmark.svg">
+                        </div>
+                    </li>
+                    <!-- Skill #5 Git/Github -->
+                    <li onmouseover="mouseoverGit(this)" onmouseout="mouseoutGit(this)"  class="skill-pill bg-light col-10 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <div class="skill d-flex justify-content-between align-items-center">
+                            <img id="gitSVG" class="skill-img" src="/assets/img/git-dark.svg">
+                            <p class="skill-title text-dark mb-0">Git</p>
+                            <img id="gitCheck" class="checkmark-svg" src="/assets/img/checkmark.svg">
+                        </div>
+                    </li>
+                    <!-- Skill #6 Bootstrap -->
+                    <li onmouseover="mouseoverBS(this)" onmouseout="mouseoutBS(this)" class="skill-pill bg-light col-10 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <div class="skill d-flex justify-content-between align-items-center">
+                            <img id="bsSVG" class="skill-img" src="/assets/img/bootstrap-dark.svg">
+                            <p id="bootstrap-pill" class="skill-title text-dark mb-0">Bootstrap</p>
+                            <img id="bsCheck" class="checkmark-svg" src="/assets/img/checkmark.svg">
+                        </div>
+                    </li>
+                    <!-- Skill #7 MongoDB -->
+                    <li onmouseover="mouseoverMongo(this)" onmouseout="mouseoutMongo(this)"  class="skill-pill bg-light col-10 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <div class="skill d-flex justify-content-between align-items-center">
+                            <img id="mongoSVG" class="skill-img" src="/assets/img/mongo-dark.svg">
+                            <p class="skill-title text-dark mb-0">MongoDB</p>
+                            <img id="mongoCheck" class="checkmark-svg" src="/assets/img/checkmark.svg">
+                        </div>
+                    </li>
+                    <!-- Skill #8 SASS -->
+                    <li onmouseover="mouseoverSass(this)" onmouseout="mouseoutSass(this)"  class="skill-pill bg-light col-10 col-sm-4 col-md-3 col-lg-3 col-xl-2">
+                        <div class="skill d-flex justify-content-between align-items-center">
+                            <img id="sassSVG" class="skill-img" src="/assets/img/sass-dark.svg">
+                            <p class="skill-title text-dark mb-0">SASS</p>
+                            <img id="sassCheck" class="checkmark-svg" src="/assets/img/checkmark.svg">
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </section>
 
 <!-- ###########################################################-->
 <!--                       Contact                              -->
 <!-- ###########################################################-->
 
-    <!--contact section -->
         <section id="contact" class="container-fluid bg-dark my-5 py-5">
             <div class="container-lg text-center rounded py-3">
                 <div id="contact-content">
@@ -420,53 +426,52 @@
                     </div>
                 </div>
             </div>
-            </div>
         </section>
 
 <!-- ###########################################################-->
-<!--                       Footer                               -->
+<!--   Footer  -->
 <!-- ###########################################################-->
 
-    <footer class="container-fluid bg-dark pt-5">
-        <div id="footer-div" class="containger-lg bg-primary py-3">
-            <div id="footer-content-wrapper" class="container-lg mb-3 mt-2">
-                <a href="#intro" id="arrow-link" role="button" >
-                    <div id="arrow" class="p-2">
-                        <span><i class="fa-solid fa-arrow-up fa-2xl text-dark"></i></span>
-                    </div>
-                </a>    
-                <div class="social mt-5">
-                    <!-- linkedin link -->
-                    <div>
-                        <a href="https://www.linkedin.com/in/brylie-baird/" target="_blank">                                
-                            <i class="social-icon fa-brands fa-linkedin fa-2xl"></i>
-                        </a>
-                    </div>
-                    <!-- github link -->
-                    <div>
-                        <a href="https://github.com/bryliebaird" target="_blank">
-                            <i class="social-icon fa-brands fa-github fa-2xl"></i>
-                        </a>
-                    </div>
-                    <!-- twitter link -->
-                    <div>
+        <footer class="container-fluid bg-dark pt-5">
+            <div id="footer-div" class="containger-lg bg-primary py-3">
+                <div id="footer-content-wrapper" class="container-lg mb-3 mt-2">
+                    <a href="#intro" id="arrow-link" role="button" >
+                        <div id="arrow" class="p-2">
+                            <span><i class="fa-solid fa-arrow-up fa-2xl text-dark"></i></span>
+                        </div>
+                    </a>    
+                    <div class="social mt-5">
+                        <!-- linkedin link -->
+                        <div>
+                            <a href="https://www.linkedin.com/in/brylie-baird/" target="_blank">                                
+                                <i class="social-icon fa-brands fa-linkedin fa-2xl"></i>
+                            </a>
+                        </div>
+                        <!-- github link -->
+                        <div>
+                            <a href="https://github.com/bryliebaird" target="_blank">
+                                <i class="social-icon fa-brands fa-github fa-2xl"></i>
+                            </a>
+                        </div>
+                        <!-- twitter link -->
+                        <div>
+                            <a data-bs-toggle="modal"data-bs-target="#socialModal">
+                                <i class="social-icon fa-brands fa-twitter fa-2xl"></i>
+                            </a>    
+                        </div>
+                        <!-- instagram link -->
+                        <div>
                         <a data-bs-toggle="modal"data-bs-target="#socialModal">
-                            <i class="social-icon fa-brands fa-twitter fa-2xl"></i>
-                        </a>    
-                    </div>
-                    <!-- instagram link -->
-                    <div>
-                    <a data-bs-toggle="modal"data-bs-target="#socialModal">
-                        <i class="social-icon fa-brands fa-instagram fa-2xl"></i>
-                    </a>     
+                            <i class="social-icon fa-brands fa-instagram fa-2xl"></i>
+                        </a>     
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     
 <!-- ###########################################################-->
-<!--                            Modals                          -->
+<!-- Modals -->
 <!-- ###########################################################-->
 
     <!-- social media modal -->
@@ -546,12 +551,11 @@
             <button type="submit" id="submitBtn" class="btn btn-font">Submit</button>
         </form> -->
 
-        <script type="text/javascript" src="particles.js"></script>
+        <script src="script.js" async defer></script>
         
         <script type="text/javascript" src="app.js"></script>
 
-        <script src="/script/script.js" async defer></script>
-
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
     </body>
 </html>

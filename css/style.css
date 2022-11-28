@@ -533,6 +533,15 @@ input {
     border: 3px solid #fff9f1;
     border-radius: 999em;
     margin: 1.375rem 1.375rem 0rem 1.375rem;
+    list-style: none;
+}
+
+#bootstrap-pill {
+    margin-right: 0.8rem;
+}
+
+#javascript-pill {
+    margin-right: 0.5rem;
 }
 
 .skill {
