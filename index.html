@@ -35,14 +35,17 @@
                 </button>
                 <div class="collapse navbar-collapse" id="nav-links">
                     <ul class="navbar-nav full-width d-flex justify-content-around">
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="#intro">Home</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects-intro">Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projects</a>
+                            <a class="nav-link" href="#skills-intro">Skills</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../assets/brylie-baird-resume.pdf" target="_blank">Resume</a>
@@ -81,6 +84,7 @@
         <section id="projects">
             <ul id="projects-grid" class="container-fluid mt-5">
                 <div class="row">
+                    <!-- ############################################################ -->
                     <li onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded">
                         <div class="project-content">
                             <header>
@@ -90,7 +94,6 @@
                                             <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
                                         </svg>
                                     </div>
-
                                     <div class="container d-flex justify-content-end align-items-center">
                                         <a href="https://github.com/bryliebaird/guess-the-word" target="_blank">
                                             <i class="project-link fa-solid fa-code-branch fa-lg"></i>
@@ -98,22 +101,21 @@
                                         <a href="https://bryliebaird.github.io/guess-the-word/?" target="_blank">
                                             <i class="project-link fa-solid fa-arrow-up-right-from-square fa-md ms-3"></i>
                                         </a>
-                                    </div>                       
+                                    </div>                          
                                 </div>
                             </header>
                             <main class="mt-3">
-                                <p class="project-title">Guess The Word</p>
-                                <p class="sm-text text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, aliquid excepturi. Blanditiis placeat dolores veritatis!</p>
+                                <p class="project-title">Guess the Word</p>
+                                <p class="sm-text text-light">This game generates a secret word pulled from an API and allows the user to guess what the word is (kind of like hangman!) Javascript validates the user response and returns any correct or incorrect letters and turns remaining.</p>
                             </main>
-                            <footer class="d-flex justify-content-start">
-                                <p class="text-light">HTML</p>
-                                <p class="text-light mx-3">CSS</p>
-                                <p class="text-light">JavaScript</p>
+                            <footer>
+                                <p class="project-footer-font">Javascript</p>
+                                <p class="project-footer-font">API</p>
                             </footer>
                         </div>
                     </li>
-
-                    <li  onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded" >
+                    <!-- ############################################################ -->
+                    <li onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded">
                         <div class="project-content">
                             <header>
                                 <div class="top d-flex justify-content-between mt-3">
@@ -129,21 +131,20 @@
                                         <a href="https://bryliebaird.github.io/css-space-animation/" target="_blank">
                                             <i class="project-link fa-solid fa-arrow-up-right-from-square fa-md ms-3"></i>
                                         </a>
-                                    </div>    
+                                    </div>                          
                                 </div>
                             </header>
                             <main class="mt-3">
-                                <p id="pureCSS" class="project-title">Pure CSS Animation</p>
-                                <p class="sm-text text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, aliquid excepturi. Blanditiis placeat dolores veritatis!</p>
+                                <p class="project-title">Pure CSS Animation</p>
+                                <p class="sm-text text-light">An image of outer-space designed using purely HTML and CSS, including CSS animations.</p>
                             </main>
-                            <footer class="d-flex justify-content-start">
-                                <p class="text-light">HTML</p>
-                                <p class="text-light mx-3">CSS</p>
+                            <footer>
+                                <p class="project-footer-font">CSS</p>
+                                <p class="project-footer-font">CSS Animations</p>
                             </footer>
                         </div>
                     </li>
-                        
-                    
+                    <!-- ############################################################ -->
                     <li onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded">
                         <div class="project-content">
                             <header>
@@ -165,18 +166,15 @@
                             </header>
                             <main class="mt-3">
                                 <p id="githubGallery" class="project-title">Github Repo Gallery</p>
-                                <p class="sm-text text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, aliquid excepturi. Blanditiis placeat dolores veritatis!</p>
+                                <p class="sm-text text-light">A gallery project that uses the Github API to pull data from my personal github account and offers users the opportunity to dynamically search repositories by name.</p>
                             </main>
-                            <footer class="d-flex justify-content-start">
-                                <p class="text-light">HTML</p>
-                                <p class="text-light mx-3">CSS</p>
-                                <p class="text-light">JavaScript</p>
+                            <footer>
+                                <p class="project-footer-font">JavaScript</p>
+                                <p class="project-footer-font">API</p>
                             </footer>
                         </div>
                     </li>
-                    
-
-                    
+                    <!-- ############################################################ -->
                     <li onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded">
                         <div class="project-content">
                             <header>
@@ -186,92 +184,90 @@
                                             <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
                                         </svg>
                                     </div>
-
                                     <div class="container d-flex justify-content-end align-items-center">
                                         <a href="https://github.com/bryliebaird/unplugged-retreat" target="_blank">
                                             <i class="project-link fa-solid fa-code-branch fa-lg"></i>
                                         </a>
-                                        <a href="https://bryliebaird.github.io/unplugged-retreat/?" target="_blank">
-                                            <i class="project-link fa-solid fa-arrow-up-right-from-square fa-md ms-3"></i>
-                                        </a>
-                                    </div>                       
-                                </div>
-                            </header>
-                            <main class="mt-3">
-                                <p id="unpluggedRetreat" class="project-title">Unplugged Retreat</p>
-                                <p class="sm-text text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, aliquid excepturi. Blanditiis placeat dolores veritatis!</p>
-                            </main>
-                            <footer class="d-flex justify-content-start">
-                                <p class="text-light">HTML</p>
-                                <p class="text-light mx-3">CSS</p>
-                                <p class="text-light">JavaScript</p>
-                            </footer>
-                        </div>
-                    </li>
-
-                    <li onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded" >
-                        <div class="top d-flex justify-content-between mt-3">
-                            <div class="folder-wrapper">
-                                <svg class="folder-svg" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title>
-                                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                                </svg>
-                            </div>
-                            <div class="container d-flex justify-content-end align-items-center">
-                                <a href="https://github.com/bryliebaird/relax-timer" target="_blank">
-                                    <i class="project-link fa-solid fa-code-branch fa-lg"></i>
-                                </a>
-                                <a href="https://bryliebaird.github.io/relax-timer/" target="_blank">
-                                    <i class="project-link fa-solid fa-arrow-up-right-from-square fa-md ms-3"></i>
-                                </a>
-                            </div>    
-                        </div>
-                        <main class="mt-3">
-                            <p id="relaxTimer" class="project-title">Relax Timer</p>
-                            <p class="sm-text text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, aliquid excepturi. Blanditiis placeat dolores veritatis!</p>
-                        </main>
-                        <footer class="d-flex justify-content-start">
-                            <p class="text-light">HTML</p>
-                            <p class="text-light mx-3">CSS</p>
-                            <p class="text-light">JavaScript</p>
-                        </footer>
-                    </li>
-
-                    <li onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded">
-                        <div class="project-content">
-                            <header>
-                                <div class="top d-flex justify-content-between mt-3">
-                                    <div class="folder-wrapper">
-                                        <svg class="folder-svg" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title>
-                                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                                        </svg>
-                                    </div>
-                                    <div class="container d-flex justify-content-end align-items-center">
-                                        <a href="https://github.com/bryliebaird/monuseal" target="_blank">
-                                            <i class="project-link fa-solid fa-code-branch fa-lg"></i>
-                                        </a>
-                                        <a href="#" target="_blank">
+                                        <a href="https://bryliebaird.github.io/unplugged-retreat/" target="_blank">
                                             <i class="project-link fa-solid fa-arrow-up-right-from-square fa-md ms-3"></i>
                                         </a>
                                     </div>                          
                                 </div>
                             </header>
                             <main class="mt-3">
-                                <p id="githubGallery" class="project-title">Monuseal</p>
-                                <p class="sm-text text-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, aliquid excepturi. Blanditiis placeat dolores veritatis!</p>
+                                <p id="githubGallery" class="project-title">Unplugged Retreat</p>
+                                <p class="sm-text text-light">A mock-up website for an outdoor retreat targeting companies and professionals in the tech industry needing to "unplug" from technology for a mini-retreat.</p>
                             </main>
-                            <footer class="d-flex justify-content-start">
-                                <p class="text-light">HTML</p>
-                                <p class="text-light mx-3">CSS</p>
-                                <p class="text-light">JavaScript</p>
+                            <footer>
+                                <p class="project-footer-font">HTML</p>
+                                <p class="project-footer-font">CSS</p>
+                                <p class="project-footer-font">Responsive Design</p>
+                            </footer>
+                        </div>
+                    </li>
+                    <!-- ############################################################ -->
+                    <li onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded">
+                        <div class="project-content">
+                            <header>
+                                <div class="top d-flex justify-content-between mt-3">
+                                    <div class="folder-wrapper">
+                                        <svg class="folder-svg" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title>
+                                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="container d-flex justify-content-end align-items-center">
+                                        <a href="https://github.com/bryliebaird/relax-timer" target="_blank">
+                                            <i class="project-link fa-solid fa-code-branch fa-lg"></i>
+                                        </a>
+                                        <a href="https://bryliebaird.github.io/relax-timer/" target="_blank">
+                                            <i class="project-link fa-solid fa-arrow-up-right-from-square fa-md ms-3"></i>
+                                        </a>
+                                    </div>                          
+                                </div>
+                            </header>
+                            <main class="mt-3">
+                                <p id="githubGallery" class="project-title">Mindfulness Timer</p>
+                                <p class="sm-text text-light">An animated timer (using vanilla javascript) that allows users to take moment to practice mindfulness through a breathing exercise.</p>
+                            </main>
+                            <footer>
+                                <p class="project-footer-font">HTML</p>
+                                <p class="project-footer-font">CSS</p>
+                                <p class="project-footer-font">Vanilla Javascript</p>
+                            </footer>
+                        </div>
+                    </li>
+                    <!-- #################################################### -->
+                    <li onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded">
+                        <div class="project-content">
+                            <header>
+                                <div class="top d-flex justify-content-between mt-3">
+                                    <div class="folder-wrapper">
+                                        <svg class="folder-svg" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title>
+                                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="container d-flex justify-content-end align-items-center">
+                                        <a href="https://docs.google.com/spreadsheets/d/1VWV3P-zZo8PulrZwjV9F-AWAk-WWudYCDhrQU1IsrM0/edit?usp=sharing" target="_blank">
+                                            <i class="project-link fa-solid fa-arrow-up-right-from-square fa-md ms-3"></i>
+                                        </a>
+                                    </div>                          
+                                </div>
+                            </header>
+                            <main class="mt-3">
+                                <p id="githubGallery" class="project-title">Pixel Art Mystery Picture</p>
+                                <p class="sm-text text-light">A digital learning activity targeting addition/subtraction practice. When correct responses are entered, an image will begin to appear.</p>
+                            </main>
+                            <footer>
+                                <p class="project-footer-font">Google Sheets</p>
+                                <p class="project-footer-font">Google Classroom</p>
+                                <p class="project-footer-font">Canva</p>
                             </footer>
                         </div>
                     </li>
                 </div>
-                   
-                </ul>
             </div>
-          
-            </section>
+                </ul>
+        </section>
     
     
 

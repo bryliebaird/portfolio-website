@@ -362,6 +362,16 @@ input {
     margin-top: 25px;
 }
 
+.project-footer-font{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 100;
+    font-size: 0.8rem;
+    color: #64ffda;
+    opacity: 0.8;
+    text-align: left;
+    margin-right: 16px;
+    margin-bottom: 0;
+}
 .card-wrapper {
     display: flex;
     justify-content: center;
@@ -383,8 +393,13 @@ input {
 }
 
 .project-title{
-    font-weight: 600;
+    font-family: "Rubik";
+    font-weight: 500;
+    font-size: 1.4rem;
+    letter-spacing: 0.9px;
     font-size: 1.65rem;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
 }
 
 .project-btn-cover {
@@ -502,7 +517,7 @@ input {
 
 
 .project-content{
-    padding: 20px;
+    padding: 10px;
 }
 
 .project {
