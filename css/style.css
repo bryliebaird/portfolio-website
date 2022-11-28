@@ -123,7 +123,9 @@ nav {
 }
 
 .nav-link {
-    font-size: 1.35rem;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1.15rem;
+    letter-spacing: 2px;
     color: rgb(0, 255, 252);
     opacity: 0.7;
     transition: 0.125s ease-in;
@@ -364,7 +366,7 @@ input {
 
 .project-footer-font{
     font-family: 'IBM Plex Mono', monospace;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 0.8rem;
     color: #64ffda;
     opacity: 0.8;
@@ -500,6 +502,7 @@ input {
     list-style: none;
 }
 
+
 .row {
     display: flex;
     justify-content:center;
@@ -546,7 +549,7 @@ input {
 }
 
 .skill-title {
-    font-family: "rubik";
+    font-family: 'IBM Plex Mono', monospace;
     font-size: 1rem;
     font-weight: 500;
     margin-right: 15%;
