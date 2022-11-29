@@ -32,6 +32,44 @@ typewrite = () => {
 }
 
 
+// =========== TOGGLE ROW DISPLAY  ============ //
+
+
+const animateCSS = (element, animation, prefix = 'animate__') =>
+  // We create a Promise and return it
+  new Promise((resolve, reject) => {
+    const animationName = `${prefix}${animation}`;
+    const node = document.querySelector(element);
+
+    node.classList.add(`${prefix}animated`, animationName);
+
+    // When the animation ends, we clean the classes and resolve the Promise
+    function handleAnimationEnd(event) {
+      event.stopPropagation();
+      node.classList.remove(`${prefix}animated`, animationName);
+      resolve('Animation ended');
+    }
+
+    node.addEventListener('animationend', handleAnimationEnd, {once: true});
+});
+
+
+function displayRow(){
+    let row = document.querySelector("#hidden-row");
+    let projectBtn = document.querySelector("#project-btn");
+
+    if(row.classList.contains("hidden")){
+        row.classList.toggle("hidden");
+        row.classList.add("fadeIn");
+    } else {
+        row.classList.toggle("hidden");
+        row.classList.add("fadeIn");
+    }
+
+    animateCSS("#hidden-row", "fadeIn");
+}
+
+
 
 // =========== PROJECT CARD HOVER EFFECT ============ //
 

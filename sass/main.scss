@@ -33,9 +33,6 @@ $hr-border-width: 3px;
 $btn-border-radius: 999em;
 $btn-padding-y: .75rem;
 $btn-padding-x: 1.25rem;
-
-
-// $btn-link-hover-color: $primary;
 $btn-font-family: "Rubik";
 
 // input-group & textarea
@@ -46,23 +43,16 @@ $input-group-addon-border-color: $dark;
 $link-color: $danger;
 $link-decoration: none;
 $link-hover-decoration: underline;
-$link-hover-color: $info;
-
 
 
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
 @import "../node_modules/bootstrap/scss/_buttons.scss";
 
+$btn-hover-color: $info;
+
 // custom hover color for card-btn using .btn-feature from bootstrap mixins 
-$feature-bg: #483978;
-
-// .btn-feature {
-//   @include button-variant($feature-bg, darken($feature-bg, 3%));
-// }
-
-$link-hover-bg: $dark;
-
+// $feature-bg: #483978;
 
 // add custom colors
 $custom-colors: (

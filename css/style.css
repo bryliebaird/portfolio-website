@@ -113,6 +113,9 @@ hr {
     transition: 0.3s ease-in;
 }
 
+.btn:hover {
+    background: #f98371;
+}
 
 
 
@@ -512,6 +515,8 @@ input {
     width: 30%;
 }
 
+
+
 /* #skills-grid{
     display: flex;
     justify-content: center;
@@ -598,6 +603,30 @@ input {
         opacity: 0;
     }
 }
+
+.hidden {
+    display: none;
+}
+
+.fadeDown{
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+
+.fadeUp{
+    animation: fadeInUp;
+    animation-duration: 2s;
+}
+
+.fadeIn {
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+.btn:hover {
+    background: #f98371;
+}
+
 
 /* ##########################################################
                         Contact
