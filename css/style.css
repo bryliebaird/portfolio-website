@@ -1,13 +1,10 @@
 body {
-    background: #483978;
-    background: black;
     background: #1b0739;
-    /* overflow-x: hidden; */
 }
 
-
-.full-width {
-    width: 100%;
+.row {
+    display: flex;
+    justify-content:center;
 }
 
 .section-width {
@@ -15,25 +12,11 @@ body {
     text-align: justify;
 }
 
-.row-width {
-    width: 85%;
-    background: #ac61b9;
-    background: #1b0739;
-}
 
-.full-height {
-    height: 100vh;
-}
-
-.vertical-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* ############### Font Styles + Sizing ################## */
+/* #############################################
+Base Styles 
+################################################ */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Montserrat', sans-serif;
     font-family: "Rubik";
     font-weight: 300;
 }
@@ -51,8 +34,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Rubik';
-    font-size: 4vw;
+    /* font-size: 4vw; */
     font-size: clamp(20px, 4vw, 40px);
     font-weight: 400;
     letter-spacing: .08rem;
@@ -73,28 +55,14 @@ h4 {
 
 p {
     font-family: "Barlow";
-    font-size: 1.3rem;
+    font-size: 1.15rem;
 }
 
-
-#intro-text {
-    font-family: "Rubik";
-    font-size: 1.62rem;
-    font-weight: 400;
-    line-height: 1.8;
-    text-align: left;
-
-    padding-top: 22px;
-    width: 100%;
+.sm-text {
+    font-size: 1rem;
 }
 
-hr {
-    width: 20%;
-}
-
-/* ############### Button Styles ################## */
 .btn {
-    /* font-family: Montserrat, sans-serif; */
     font-size: 1rem;
     letter-spacing: 0.1875rem;
     text-transform: uppercase;
@@ -103,24 +71,21 @@ hr {
     border: transparent;
 }
 
-.contact-btn {
+.btn {
     transition: 0.3s ease-out;
 }
 
-.btn-cover:hover{
-    background: #f87b66;
-    border-radius: 999em;
-    transition: 0.3s ease-in;
+hr {
+    width: 20%;
 }
 
-.btn:hover {
-    background: #f98371;
+.hidden{
+    display: none;
 }
 
-
-
-
-/* ############### Navbar + Intro ################## */
+/* #############################################
+Navbar
+################################################ */
 nav {
     box-shadow: rgb(45, 163, 169) 0px 3px 5px 0px;
 }
@@ -146,10 +111,10 @@ nav {
     box-shadow: 0 0 2rem 0.063rem #1b0739;
 }
 
-.modal-content {
-    border-radius: 0;
-}
 
+/* #############################################
+Website Logos
+################################################ */
 .logo-img {
     box-shadow: 0px 0px 0px 5px #2DA3A9;
     border-radius: 50%;
@@ -169,34 +134,145 @@ nav {
     animation-timing-function: linear; 
 }
 
-@keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
+
+/* #############################################
+Project Cards
+################################################ */
+#projects-grid, #skills-grid{
+    list-style: none;
 }
 
-/* ############### Project Cards ################## */
-.card {
-    margin: 0 0px 15px 0px;
+.project {
+    background:#483978;
+    border: 1px solid #1b0739;
+    min-width: 25%;
+    margin: 1.375rem 1.375rem 0rem 1.375rem;
 }
 
-.card, .thanks-card {
+.project-content{
+    padding: 10px;
+}
+
+.project-link {
+    color: #fff;
+    opacity: 0.75;
+}
+
+.project-link:hover {
+    color: #f86d58;
+}
+
+.folder-svg {
+    width: 30%;
+}
+
+.project-title{
+    font-family: "Rubik";
+    font-weight: 500;
+    color: #fff9f1;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+    opacity:0.9;
+    transition: all 0.5s ease-in;
+}
+
+.project-title-hover {
+    color: #64ffda;
+}
+
+.project-footer-font{
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: #64ffda;
+    opacity: 0.8;
+    text-align: left;
+    margin-right: 16px;
+    margin-bottom: 0;
+}
+
+.project-btn {
+    width: 100%;
+    overflow: hidden;
     border-radius: 0;
-    box-shadow: 0 0 50px 1px #ac61b9;
 }
 
-.card:hover {
-    transform: rotateY(180deg);
+
+/* #############################################
+Skill Pills
+################################################ */
+.skill-pill {
+    border: 3px solid #fff9f1;
+    border-radius: 999em;
+    margin: 1.375rem 1.375rem 0rem 1.375rem;
+    list-style: none;
 }
 
+#bootstrap-pill {
+    margin-right: 0.8rem;
+}
+
+#javascript-pill {
+    margin-right: 0.5rem;
+}
+
+.skill-img {
+    width: 15%;
+    transition: all 0.5s ease-in;
+}
+
+.checkmark-svg {
+    width: 12%;
+    overflow: visible;
+}
+
+.skill-title {
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 15%;
+    text-align: center;
+}
+
+.skill-text {
+    font-size: 1.25rem;
+}
+
+
+/* #############################################
+Footer
+################################################ */
 #footer-content-wrapper{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+
+#footer-div {
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    box-shadow: 0 0 2rem 0.063rem #1b0739;
+}
+
+.social-row {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.social-icon{
+    color: #161b22;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    color: #5793ac; 
 }
 
 #arrow {
@@ -207,21 +283,276 @@ nav {
     border-radius: 50%;
 }
 
-.social {
-    width: 50%;
+
+/* ##########################################################
+Contact Modal
+########################################################### */
+#contact-modal {
+    border-radius: 12px;
+}
+
+.modal-content {
+    border-radius: 0;
+} 
+
+
+#contactModalLabel{
+    color: #000;
+    font-family: "Rubik";
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    opacity: 0.6;
+}
+
+input {
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 0;
+}
+
+.input-container, .input-group-text {
+    /* border: 1.75px solid #1b0739; */
+    border: transparent;
+}
+
+.textarea-label {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* ##########################################################
+Contact Modal
+########################################################### */
+.social-modal {
+    border-radius: 12px;
+}
+
+#social-modal-text {
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+#socialModalLabel {
+    font-family: "Rubik";
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #f86d58;
+}
+
+
+/* 
+##########################################################
+Animations & Animation Classes
+########################################################### 
+*/
+.fadeIn {
+    animation: fadeIn;
+    animation-duration: 1s;
+}
+
+.fadeDown{
+    animation: fadeInDown;
+    animation-duration: 2s;
+}
+
+.fadeUp{
+    animation: fadeInUp;
+    animation-duration: 2s;
+}
+
+
+/* 
+###########################################################
+Keyframes
+###########################################################
+*/
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+
+/* ############################################## 
+Media Queries 
+################################################# */
+@media (min-width 0px) {
+    #intro {
+        position: static;
+        background: #483978;
+        visibility: visible;
+    }
+}
+
+ /* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+
+    .skill {
+        padding: 0.20rem;
+    }
+
+    .skill-img{
+        width: 25%;
+    }
+
+    .checkmark-svg {
+        width: 20%;
+    }
+    .card-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .card:nth-child(2){
+        margin-right: 35px;
+        margin-left: 35px;
+
+    }
+
+    .card {
+        margin-bottom: 0;
+    }
+
+}
+
+
+/* Medium devices (tablets, 768px and up) */ 
+@media (min-width: 768px) { 
+    .section-width {
+        width: 70vw;
+    }
+}
+
+@media (min-width: 992px) { 
+    .section-width {
+        width: 45vw;
+    }
+}
+
+
+/* ############################################## 
+Archived Styles 
+################################################# */
+/* .card {
+    margin: 0 0px 15px 0px;
+} */
+
+/* .card, .thanks-card {
+    border-radius: 0;
+    box-shadow: 0 0 50px 1px #ac61b9;
+} */
+
+/* .card:hover {
+    transform: rotateY(180deg);
+} */
+
+
+/* .project-img {
+    -webkit-transition:all .9s ease; 
+    -moz-transition:all .9s ease; 
+    -o-transition:all .9s ease;
+    -ms-transition:all .9s ease; 
+} */
+
+/* .project-card:hover .img-box img {
+    opacity: 0.7;
+    -webkit-transform:scale(1.15);
+    -moz-transform:scale(1.15);
+    -ms-transform:scale(1.15);
+    -o-transform:scale(1.15);
+    transform:scale(1.15);
+} */
+
+/* .project-card {
+    background: #FFFFFF;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
+} */
+
+/* .project-card:hover{
+    background: #fff;
+    box-shadow: 0 0 50px 1px #ac61b9;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    -ms-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+} */
+
+/* 
+.project-text {
+    font-size: 1.15rem;
+} */
+
+/* #social-wrapper {
+    width: 40%;   
+} */
+
+/* #opacity {
+    background: #fff9f1;
+    width: 58%;
+} */
+
+/* #name-text {
+    font-size: 1.15rem;
+}
+
+#name-span {
+    font-family: 'Leckerli One', cursive;
+} */
+
+/* #particles-js {
+    visibility: hidden;
+} */
+
+/* .btn:hover {
+    background: #f98371;
+} */
+
+/* #twSpan {
+    animation: blinker 1.25s linear infinite;
+}
+
+@keyframes blinker {
+    50%{
+        opacity: 0;
+    }
+} */
+
+/* .project-btn-cover {
+    border-top: 2px solid #1b0739;
+}
+
+.project-btn-cover:first-child {
+    border-right: 2px solid #1b0739;
+} */
+
+/* .carousel-control-prev-icon {
+    margin-right: 35px;
+}
+
+.carousel-control-next-icon {
+    margin-left: 35px;
+} */
+
+/* 
+.vertical-center {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-}
+} */
 
-.social-icon{
-    color: #161b22;
-}
-
-
-/* ================================= */
-
+/* 
 .cards-wrapper {
     display: flex;
     flex-direction: column;
@@ -234,10 +565,6 @@ nav {
 }
 
 .card-container {
-    /* height: 50vw;
-    width: 50vw; */
-    /* height: 40vh; */
-    /* width: 80%; */
     height: 40vh;
     z-index: 1;
     perspective: 1000px;
@@ -299,85 +626,23 @@ nav {
 
 .thanks-card {
     width: 50%;
-}
+} */
 
-
-
-/* ############### Footer + Contact Form ################## */
-#footer-div {
-    border-top-left-radius: 50% 100%;
-    border-top-right-radius: 50% 100%;
-    box-shadow: 0 0 2rem 0.063rem #1b0739;
-}
-
-#contactModalLabel{
-    color: #000;
-    font-family: "Rubik";
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.08rem;
-    opacity: 0.6;
-}
-
-input {
-    font-family: 'Montserrat', sans-serif;
-    border-radius: 0;
-}
-
-.input-container, .input-group-text {
-    /* border: 1.75px solid #1b0739; */
-    border: transparent;
-}
-
-.textarea-label {
-    font-family: 'Montserrat', sans-serif;
-}
-
-
-
-.social-modal {
-    border-radius: 12px;
-}
-
-#social-modal-text {
-    text-align: center;
-    font-size: 1.25rem;
-}
-
-#socialModalLabel {
-    font-family: "Rubik";
-    font-weight: 500;
-    text-transform: uppercase;
-    color: #f86d58;
-}
-
-
-/* ############ project cards ################ */
-
+/* 
 #project-cards {
     width: 90vw;
-}
+} */
 
-.project-row {
+/* .project-row {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     margin-top: 25px;
-}
+} */
 
-.project-footer-font{
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: 400;
-    font-size: 0.8rem;
-    color: #64ffda;
-    opacity: 0.8;
-    text-align: left;
-    margin-right: 16px;
-    margin-bottom: 0;
-}
-.card-wrapper {
+/* .card-wrapper {
     display: flex;
     justify-content: center;
 }
@@ -387,346 +652,10 @@ input {
     width: 80%; 
     margin: 0 1.5rem;
     border: 2px solid #1b0739;
-}
+} */
 
-.carousel-control-prev-icon {
-    margin-right: 35px;
-}
-
-.carousel-control-next-icon {
-    margin-left: 35px;
-}
-
-.project-title{
-    font-family: "Rubik";
-    font-weight: 500;
-    font-size: 1.4rem;
-    letter-spacing: 0.9px;
-    font-size: 1.65rem;
-    line-height: 1.3;
-    margin-bottom: 0.5rem;
-}
-
-.project-btn-cover {
-    border-top: 2px solid #1b0739;
-}
-
-.project-btn-cover:first-child {
-    border-right: 2px solid #1b0739;
-}
-
-.project {
-    border: 1px solid #1b0739;
-}
-
-.project-btn {
-    width: 100%;
-    overflow: hidden;
-    border-radius: 0;
-}
-
-
-.project-link {
-    color: #fff;
-    opacity: 0.75;
-}
-
-.project-link:hover {
-    color: #f86d58;
-    /* text-decoration: none; */
-}
-
-
-.text-box {
-    width: 90%;
-}
-
-.img-box {
+/* .img-box {
     background: #ffffff;
     overflow: hidden;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.50);
-}
-
-.project-img {
-    -webkit-transition:all .9s ease; 
-    -moz-transition:all .9s ease; 
-    -o-transition:all .9s ease;
-    -ms-transition:all .9s ease; 
-}
-
-.project-card:hover .img-box img {
-    opacity: 0.7;
-    -webkit-transform:scale(1.15);
-    -moz-transform:scale(1.15);
-    -ms-transform:scale(1.15);
-    -o-transform:scale(1.15);
-    transform:scale(1.15);
-}
-
-.project-card {
-    background: #FFFFFF;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -ms-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.40);
-}
-
-.project-card:hover{
-    background: #fff;
-    box-shadow: 0 0 50px 1px #ac61b9;
-    -webkit-transition: all 0.2s ease-in;
-    -moz-transition: all 0.2s ease-in;
-    -ms-transition: all 0.2s ease-in;
-    -o-transition: all 0.2s ease-in;
-    transition: all 0.2s ease-in;
-}
-
-
-.project-text {
-    font-size: 1.15rem;
-}
-
-#social-wrapper {
-    width: 40%;   
-}
-
-.social-icon {
-    transition: 0.3s;
-}
-
-.social-icon:hover {
-    color: #5793ac; 
-    text-decoration: none;
-}
-
-#projects-grid, #skills-grid{
-    list-style: none;
-}
-
-
-.row {
-    display: flex;
-    justify-content:center;
-}
-
-.folder-svg {
-    width: 30%;
-}
-
-
-
-/* #skills-grid{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 } */
-
-
-.project-content{
-    padding: 10px;
-}
-
-.project {
-    background:#483978;
-    min-width: 25%;
-    margin: 1.375rem 1.375rem 0rem 1.375rem;
-}
-
-.skill-pill {
-    border: 3px solid #fff9f1;
-    border-radius: 999em;
-    margin: 1.375rem 1.375rem 0rem 1.375rem;
-    list-style: none;
-}
-
-#bootstrap-pill {
-    margin-right: 0.8rem;
-}
-
-#javascript-pill {
-    margin-right: 0.5rem;
-}
-
-.skill {
-    width: 100%;
-    height: 100%;
-}
-
-.skill-text {
-    font-size: 1.25rem;
-}
-.checkmark-svg {
-    width: 12%;
-    overflow: visible;
-}
-
-.skill-title {
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 1rem;
-    font-weight: 500;
-    margin-right: 15%;
-    text-align: center;
-}
-
-#js-skill-title {
-    margin-right: 10%;
-}
-
-.skill-img {
-    width: 15%;
-    transition: all 0.5s ease-in;
-}
-
-.project-title {
-    color: #fff9f1;
-    opacity: 0.9;
-    transition: all 0.5s ease-in;
-}
-
-.project-title-hover {
-    color: #64ffda;
-}
-
-
-.sm-text {
-    font-size: 1rem;
-}
-
-#twSpan {
-    animation: blinker 1.25s linear infinite;
-}
-
-@keyframes blinker {
-    50%{
-        opacity: 0;
-    }
-}
-
-.hidden {
-    display: none;
-}
-
-.fadeDown{
-    animation: fadeInDown;
-    animation-duration: 2s;
-}
-
-.fadeUp{
-    animation: fadeInUp;
-    animation-duration: 2s;
-}
-
-.fadeIn {
-    animation: fadeIn;
-    animation-duration: 1s;
-}
-
-.btn:hover {
-    background: #f98371;
-}
-
-
-/* ##########################################################
-                        Contact
-########################################################### */
-
-#opacity {
-    background: #fff9f1;
-    width: 58%;
-}
-
-#contact-modal {
-    border-radius: 12px;
-}
-#name-text {
-    font-size: 1.15rem;
-}
-#name-span {
-    font-family: 'Leckerli One', cursive;
-}
-
-/* ==================================== MEDIA QUERIES ======================================= */
-
-
-@media (min-width 0px) {
-    #intro {
-        position: static;
-        background: #483978;
-        visibility: visible;
-    }
-
-    #particles-js {
-    visibility: hidden;
-    }
-    
-}
-
- /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { 
-
-    .skill {
-        padding: 0.20rem;
-    }
-
-    .skill-img{
-        width: 25%;
-    }
-
-    .checkmark-svg {
-        width: 20%;
-    }
-    .card-row {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-
-    .card:nth-child(2){
-        margin-right: 35px;
-        margin-left: 35px;
-
-    }
-
-    .card {
-        margin-bottom: 0;
-    }
-
-}
-
-
-/* Medium devices (tablets, 768px and up) */ 
-@media (min-width: 768px) { 
-    .section-width {
-        width: 70vw;
-    }
-
-
-
-  
-}
-
-@media (min-width: 992px) { 
-    .section-width {
-        width: 45vw;
-    }
-
-
-}
-
-@media (min-width: 1400px) { 
-    /* .section-width {
-        width: 45vw;
-    } */
-
-    /* .project {
-        min-width: 0px;
-        max-width: 30%;
-    } */
-
-
-
-}

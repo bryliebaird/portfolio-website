@@ -9,7 +9,10 @@
 
         <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22256%22 height=%22256%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2250%22 fill=%22%23ac61b9%22></rect><path fill=%22%231b0739%22 d=%22M45.94 61.06Q46.01 67.50 42.09 71Q38.17 74.50 31.73 74.50L31.73 74.50L17.17 74.50Q16.47 74.50 16.47 73.80L16.47 73.80L16.47 26.20Q16.47 25.50 17.17 25.50L17.17 25.50L30.96 25.50Q37.75 25.50 41.60 28.82Q45.45 32.15 45.45 38.52L45.45 38.52Q45.45 46.01 39.29 48.95L39.29 48.95Q38.94 49.16 39.29 49.30L39.29 49.30Q42.51 50.98 44.22 53.92Q45.94 56.86 45.94 61.06L45.94 61.06ZM23.47 31.31Q23.19 31.31 23.19 31.59L23.19 31.59L23.19 46.36Q23.19 46.64 23.47 46.64L23.47 46.64L31.03 46.64Q34.67 46.64 36.73 44.64Q38.80 42.65 38.80 39.15L38.80 39.15Q38.80 35.44 36.73 33.37Q34.67 31.31 31.03 31.31L31.03 31.31L23.47 31.31ZM31.45 68.62Q35.09 68.62 37.15 66.41Q39.22 64.21 39.22 60.36L39.22 60.36Q39.22 56.51 37.12 54.23Q35.02 51.96 31.38 51.96L31.38 51.96L23.47 51.96Q23.19 51.96 23.19 52.24L23.19 52.24L23.19 68.34Q23.19 68.62 23.47 68.62L23.47 68.62L31.45 68.62ZM83.53 61.06Q83.60 67.50 79.68 71Q75.76 74.50 69.32 74.50L69.32 74.50L54.76 74.50Q54.06 74.50 54.06 73.80L54.06 73.80L54.06 26.20Q54.06 25.50 54.76 25.50L54.76 25.50L68.55 25.50Q75.34 25.50 79.19 28.82Q83.04 32.15 83.04 38.52L83.04 38.52Q83.04 46.01 76.88 48.95L76.88 48.95Q76.53 49.16 76.88 49.30L76.88 49.30Q80.10 50.98 81.81 53.92Q83.53 56.86 83.53 61.06L83.53 61.06ZM61.06 31.31Q60.78 31.31 60.78 31.59L60.78 31.59L60.78 46.36Q60.78 46.64 61.06 46.64L61.06 46.64L68.62 46.64Q72.26 46.64 74.32 44.64Q76.39 42.65 76.39 39.15L76.39 39.15Q76.39 35.44 74.32 33.37Q72.26 31.31 68.62 31.31L68.62 31.31L61.06 31.31ZM69.04 68.62Q72.68 68.62 74.74 66.41Q76.81 64.21 76.81 60.36L76.81 60.36Q76.81 56.51 74.71 54.23Q72.61 51.96 68.97 51.96L68.97 51.96L61.06 51.96Q60.78 51.96 60.78 52.24L60.78 52.24L60.78 68.34Q60.78 68.62 61.06 68.62L61.06 68.62L69.04 68.62Z%22></path></svg>" />
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> -->
+
+        <!-- bootstrap CDN -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
         <!-- custom bootstrap sass link -->
         <link rel="stylesheet" href="css/main.min.css">
@@ -25,7 +28,7 @@
 
 
     </head>
-    <body>
+    <body class="bg-dark">
 
 <!-- ###########################################################-->
 <!--  Navbar   -->
@@ -36,7 +39,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="nav-links">
-                    <ul class="navbar-nav full-width d-flex justify-content-around">
+                    <ul class="navbar-nav full-width d-flex justify-content-around w-100">
                         <li class="nav-item">
                             <a class="nav-link" href="#projects-intro">Projects</a>
                         </li>
@@ -267,101 +270,100 @@
                             </footer>
                         </div>
                     </li>
-                    </div>
-
-                    <div id="hidden-row" class="row hidden">
-                        <!-- Project #7 Digital Escape Room -->
-                        <li onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded">
-                            <div class="project-content">
-                                <header>
-                                    <div class="top d-flex justify-content-between mt-3">
-                                        <div class="folder-wrapper">
-                                            <svg class="folder-svg" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title>
-                                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                                            </svg>
-                                        </div>
-                                        <div class="container d-flex justify-content-end align-items-center">
-                                            <a href="https://www.canva.com/design/DAFKdLqTCDE/_N7Mtx2GK43y50nyx-a5tg/view#1" target="_blank">
-                                                <i class="project-link fa-solid fa-arrow-up-right-from-square fa-md ms-3"></i>
-                                            </a>
-                                        </div>                          
+                </div>
+                <!-- ================== PROJECT HIDDEN ROW ====================== -->
+                <div id="hidden-row" class="hidden-row row hidden" onclick="displayRow()">
+                    <!-- Project #7 Digital Escape Room -->
+                    <li onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded">
+                        <div class="project-content">
+                            <header>
+                                <div class="top d-flex justify-content-between mt-3">
+                                    <div class="folder-wrapper">
+                                        <svg class="folder-svg" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title>
+                                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                                        </svg>
                                     </div>
-                                </header>
-                                <main class="mt-3">
-                                    <p id="digitalEscapeRoom" class="project-title">Digital Escape Room</p>
-                                    <p class="sm-text text-light">A halloween-themed digital escape room used for multiplication practice. The escape room and graphics were created using Canva; the "lockbox" was created using Google Forms.
-                                    </p>
-                                </main>
-                                <footer>
-                                    <p class="project-footer-font">Instructional Design</p>
-                                    <p class="project-footer-font">Canva</p>
-                                    <p class="project-footer-font">Google Forms, Google Slides</p>
-                                </footer>
-                            </div>
-                        </li>
-                        <!-- Project #8 Node.js Project (Coming Soon!) -->
-                        <li onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded">
-                            <div class="project-content">
-                                <header>
-                                    <div class="top d-flex justify-content-between mt-3">
-                                        <div class="folder-wrapper">
-                                            <svg class="folder-svg" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title>
-                                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                                            </svg>
-                                        </div>
-                                        <div class="container d-flex justify-content-end align-items-center">
-                                            <a href="#">
-                                                <i class="project-link fa-solid fa-arrow-up-right-from-square fa-md ms-3"></i>
-                                            </a>
-                                        </div>                          
+                                    <div class="container d-flex justify-content-end align-items-center">
+                                        <a href="https://www.canva.com/design/DAFKdLqTCDE/_N7Mtx2GK43y50nyx-a5tg/view#1" target="_blank">
+                                            <i class="project-link fa-solid fa-arrow-up-right-from-square fa-md ms-3"></i>
+                                        </a>
+                                    </div>                          
+                                </div>
+                            </header>
+                            <main class="mt-3">
+                                <p id="digitalEscapeRoom" class="project-title">Digital Escape Room</p>
+                                <p class="sm-text text-light">A halloween-themed digital escape room used for multiplication practice. The escape room and graphics were created using Canva; the "lockbox" was created using Google Forms.
+                                </p>
+                            </main>
+                            <footer>
+                                <p class="project-footer-font">Instructional Design</p>
+                                <p class="project-footer-font">Canva</p>
+                                <p class="project-footer-font">Google Forms, Google Slides</p>
+                            </footer>
+                        </div>
+                    </li>
+                    <!-- Project #8 Node.js Project (Coming Soon!) -->
+                    <li onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded">
+                        <div class="project-content">
+                            <header>
+                                <div class="top d-flex justify-content-between mt-3">
+                                    <div class="folder-wrapper">
+                                        <svg class="folder-svg" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title>
+                                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                                        </svg>
                                     </div>
-                                </header>
-                                <main class="mt-3">
-                                    <p id="digitalEscapeRoom" class="project-title">NASA API</p>
-                                    <p class="sm-text text-light mb-5 pb-5"><i>Coming Soon!</i>
-                                    </p>
-                                </main>
-                                <footer class="pt-4">
-                                    <p class="project-footer-font">Rest API</p>
-                                    <p class="project-footer-font">Node.js</p>
-                                    <p class="project-footer-font">Javascript</p>
-                                </footer>
-                            </div>
-                        </li>
-                        <!-- Project #9 React Project (Coming Soon!) -->
-                        <li onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded">
-                            <div class="project-content">
-                                <header>
-                                    <div class="top d-flex justify-content-between mt-3">
-                                        <div class="folder-wrapper">
-                                            <svg class="folder-svg" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title>
-                                                <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
-                                            </svg>
-                                        </div>
-                                        <div class="container d-flex justify-content-end align-items-center">
-                                            <a href="#">
-                                                <i class="project-link fa-solid fa-arrow-up-right-from-square fa-md ms-3"></i>
-                                            </a>
-                                        </div>                          
+                                    <div class="container d-flex justify-content-end align-items-center">
+                                        <a href="#">
+                                            <i class="project-link fa-solid fa-arrow-up-right-from-square fa-md ms-3"></i>
+                                        </a>
+                                    </div>                          
+                                </div>
+                            </header>
+                            <main class="mt-3">
+                                <p id="digitalEscapeRoom" class="project-title">NASA API</p>
+                                <p class="sm-text text-light mb-5 pb-5"><i>Coming Soon!</i>
+                                </p>
+                            </main>
+                            <footer class="pt-4">
+                                <p class="project-footer-font">Rest API</p>
+                                <p class="project-footer-font">Node.js</p>
+                                <p class="project-footer-font">Javascript</p>
+                            </footer>
+                        </div>
+                    </li>
+                    <!-- Project #9 React Project (Coming Soon!) -->
+                    <li onmouseover="mouseoverProject(this)" onmouseout="mouseoutProject(this)" class="project col-10 col-md-4 col-lg-3 col-xl-2 rounded">
+                        <div class="project-content">
+                            <header>
+                                <div class="top d-flex justify-content-between mt-3">
+                                    <div class="folder-wrapper">
+                                        <svg class="folder-svg" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="#64ffda" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-folder"><title>Folder</title>
+                                            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path>
+                                        </svg>
                                     </div>
-                                </header>
-                                <main class="mt-3">
-                                    <p id="digitalEscapeRoom" class="project-title">Avatar The Last Airbender API</p>
-                                    <p class="sm-text text-light mb-5 pb-5"><i>Coming Soon!</i> 
-                                    </p>
-                                </main>
-                                <footer>
-                                    <p class="project-footer-font">Rest API</p>
-                                    <p class="project-footer-font">Node.js</p>
-                                    <p class="project-footer-font">Javascript</p>
-                                </footer>
-                            </div>
-                        </li>
-                    </div>
+                                    <div class="container d-flex justify-content-end align-items-center">
+                                        <a href="#">
+                                            <i class="project-link fa-solid fa-arrow-up-right-from-square fa-md ms-3"></i>
+                                        </a>
+                                    </div>                          
+                                </div>
+                            </header>
+                            <main class="mt-3">
+                                <p id="digitalEscapeRoom" class="project-title">Avatar The Last Airbender API</p>
+                                <p class="sm-text text-light mb-5 pb-5"><i>Coming Soon!</i> 
+                                </p>
+                            </main>
+                            <footer>
+                                <p class="project-footer-font">Rest API</p>
+                                <p class="project-footer-font">Node.js</p>
+                                <p class="project-footer-font">Javascript</p>
+                            </footer>
+                        </div>
+                    </li>
                 </div>
             </ul>
         </section>
-        <!-- project btn to toggle row display property -->
+        
         <section id="project-btn" onclick="displayRow()" class="pb-4 mb-4">
             <article class="text-center">
                 <button class="btn btn-primary mb-4">View More</button>
@@ -488,11 +490,9 @@
                 </div>
             </ul>
         </section>
-
 <!-- ###########################################################-->
 <!--                       Contact                              -->
 <!-- ###########################################################-->
-
         <section id="contact" class="container-fluid bg-dark my-4 py-4">
             <div class="container-lg text-center rounded py-3">
                 <div id="contact-content">
@@ -522,11 +522,9 @@
                 </div>
             </div>
         </section>
-
 <!-- ###########################################################-->
 <!--   Footer  -->
 <!-- ###########################################################-->
-
         <footer class="container-fluid bg-dark pt-5">
             <div id="footer-div" class="containger-lg bg-primary py-3">
                 <div id="footer-content-wrapper" class="container-lg mb-3 mt-2">
@@ -535,7 +533,7 @@
                             <span><i class="fa-solid fa-arrow-up fa-2xl text-dark"></i></span>
                         </div>
                     </a>    
-                    <div class="social mt-5">
+                    <div class="social-row mt-5">
                         <!-- linkedin link -->
                         <div>
                             <a href="https://www.linkedin.com/in/brylie-baird/" target="_blank">                                
@@ -556,7 +554,7 @@
                         </div>
                         <!-- instagram link -->
                         <div>
-                        <a data-bs-toggle="modal"data-bs-target="#socialModal">
+                        <a data-bs-toggle="modal" data-bs-target="#socialModal">
                             <i class="social-icon fa-brands fa-instagram fa-2xl"></i>
                         </a>     
                         </div>
@@ -570,7 +568,7 @@
 <!-- ###########################################################-->
 
     <!-- social media modal -->
-        <div class="modal fade" id="socialModal" tabindex="-1" aria-labelledby="socialModalLabel" aria-hidden="true">
+        <div id="socialModal" class="modal fade" id="socialModal" tabindex="-1" aria-labelledby="socialModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content social-modal bg-light p-3">
                     <div class="modal-body">
@@ -623,7 +621,6 @@
             </div>
         </div>
 
-
         <!-- <form id="form" class="close-form" action="https://formsubmit.co/3ec9605a560317a4391679720afa7698" method="POST">
             <div class="input-container">
                 <span class="icon-container">
@@ -650,7 +647,7 @@
         
         <script type="text/javascript" src="app.js"></script>
 
-    
-        <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
     </body>
 </html>

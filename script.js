@@ -1,25 +1,12 @@
-// =========== COPYRIGHT UPDATE YEAR ============ //
 
-// *** Selectors ***
-let yearSpan = document.querySelector("#year");
-let dateObject = new Date();
-let year = dateObject.getFullYear().toString();
+// ###########################################################
+// typing effect on <h2>
+// ########################################################### //
 
-// *** Function Declaration ***
-function updateCopyright(){
-   yearSpan.innerHTML = year;
-}
-
-
-
-// =========== TYPEWRITER EFFECT ============ //
-
-// *** Selectors ***
 var twArr = ["Just your friendly neighborhood coder."];
 var twPosition = 0;
 var twSpeed = 180;
 
-// *** Typewriter Function ***
 typewrite = () => {
     document.querySelector("#twText").innerHTML = twArr[0].substring(0, twPosition) + `<span id="twSpan">\u25ae</span>`;
 
@@ -31,47 +18,80 @@ typewrite = () => {
     }
 }
 
+// =========== animate.style code ============ //
+// Animate CSS Code
+// const animateCSS = (element, animation, prefix = 'animate__') =>
 
-// =========== TOGGLE ROW DISPLAY  ============ //
+//   new Promise((resolve, reject) => {
+//     const animationName = `${prefix}${animation}`;
+//     const node = document.querySelector(element);
 
+//     node.classList.add(`${prefix}animated`, animationName);
 
-const animateCSS = (element, animation, prefix = 'animate__') =>
-  // We create a Promise and return it
-  new Promise((resolve, reject) => {
-    const animationName = `${prefix}${animation}`;
-    const node = document.querySelector(element);
+//     function handleAnimationEnd(event) {
+//       event.stopPropagation();
+//       node.classList.remove(`${prefix}animated`, animationName);
+//       resolve('Animation ended');
+//     }
 
-    node.classList.add(`${prefix}animated`, animationName);
-
-    // When the animation ends, we clean the classes and resolve the Promise
-    function handleAnimationEnd(event) {
-      event.stopPropagation();
-      node.classList.remove(`${prefix}animated`, animationName);
-      resolve('Animation ended');
-    }
-
-    node.addEventListener('animationend', handleAnimationEnd, {once: true});
-});
+//     node.addEventListener('animationend', handleAnimationEnd, {once: true});
+// });
 
 
-function displayRow(){
-    let row = document.querySelector("#hidden-row");
-    let projectBtn = document.querySelector("#project-btn");
+// ###########################################################
+// toggle display class on project .row
+// ########################################################### //
+// function displayRow(){
+//     let row = document.querySelector("#hidden-row");
+//     // document.documentElement.style.setProperty('--animate-duration', '2s');
+//     if(row.classList.contains("hidden")){
+//         row.classList.toggle("hidden");
+//         row.classList.add("fadeIn");
+//     } else {
+//         row.classList.toggle("hidden");
+//         row.classList.add("fadeIn");
+//     }
 
-    if(row.classList.contains("hidden")){
-        row.classList.toggle("hidden");
-        row.classList.add("fadeIn");
-    } else {
-        row.classList.toggle("hidden");
-        row.classList.add("fadeIn");
-    }
 
-    animateCSS("#hidden-row", "fadeIn");
+//     animateCSS("#hidden-row", "fadeIn");
+// }
+
+
+// function openRow(row){
+//     alert("open rowwww");
+//     let row = document.querySelector(".hidden-row");
+//     row.classList.remove("row");
+// }
+
+// function openRow(row){
+//     alert("open rowwwwwwwww");
+//     let x = document.querySelector("#hidden-row");
+//     x.classList.remove("hiddenn");
+// }
+
+// function closeRow(row){
+//     alert("close row");
+//     let x = document.querySelector("#hidden-row");
+//     x.classList.add("hiddenn");
+// }
+
+function displayRow(row){
+    let x = document.querySelector("#hidden-row");
+    x.classList.toggle("hidden");
+
+    // if(x.classList.contains("hiddenn")){
+    //     // alert("#1");
+    //     // x.classList.add("fadeOut");
+    // } else{
+    //     // alert("#2");
+    // }
 }
 
 
 
-// =========== PROJECT CARD HOVER EFFECT ============ //
+
+
+
 
 function mouseoverProject (project){
     let title = project.getElementsByClassName("project-title");
@@ -87,13 +107,6 @@ function mouseoutProject(project){
 
 
 // #######################################################
-
-
-// function mouseoverSkill(skill){
-//     let checkmark = document.getElementsByClassName("checkmark");
-//     checkmark[0].classList.add("animate__animated", "animate__bounce");
-//     let img = document.getElementsByClassName("skill-img");   
-// }
 
 function mouseoverHTML(skill){
     skill.style.border = "3px solid #f86d58";
@@ -202,10 +215,6 @@ function mouseoutSass(skill){
     document.querySelector("#sassSVG").setAttribute("src", "/assets/img/sass-dark.svg");
     document.querySelector("#sassCheck").classList.remove("animate__animated", "animate__bounce");
 }
-
-
-
-
 
 
 // *** EVENT LISTENERS ***
