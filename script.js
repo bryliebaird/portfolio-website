@@ -20,23 +20,22 @@ typewrite = () => {
 
 // =========== animate.style code ============ //
 // Animate CSS Code
-// const animateCSS = (element, animation, prefix = 'animate__') =>
+const animateCSS = (element, animation, prefix = 'animate__') =>
 
-//   new Promise((resolve, reject) => {
-//     const animationName = `${prefix}${animation}`;
-//     const node = document.querySelector(element);
+  new Promise((resolve, reject) => {
+    const animationName = `${prefix}${animation}`;
+    const node = document.querySelector(element);
 
-//     node.classList.add(`${prefix}animated`, animationName);
+    node.classList.add(`${prefix}animated`, animationName);
 
-//     function handleAnimationEnd(event) {
-//       event.stopPropagation();
-//       node.classList.remove(`${prefix}animated`, animationName);
-//       resolve('Animation ended');
-//     }
+    function handleAnimationEnd(event) {
+      event.stopPropagation();
+      node.classList.remove(`${prefix}animated`, animationName);
+      resolve('Animation ended');
+    }
 
-//     node.addEventListener('animationend', handleAnimationEnd, {once: true});
-// });
-
+    node.addEventListener('animationend', handleAnimationEnd, {once: true});
+});
 
 // ###########################################################
 // toggle display class on project .row
@@ -75,23 +74,10 @@ typewrite = () => {
 //     x.classList.add("hiddenn");
 // }
 
-function displayRow(row){
-    let x = document.querySelector("#hidden-row");
-    x.classList.toggle("hidden");
-
-    // if(x.classList.contains("hiddenn")){
-    //     // alert("#1");
-    //     // x.classList.add("fadeOut");
-    // } else{
-    //     // alert("#2");
-    // }
-}
-
-
-
-
-
-
+// function displayRow(row){
+//     let x = document.querySelector("#hidden-row");
+//     x.classList.toggle("hidden");
+// }
 
 function mouseoverProject (project){
     let title = project.getElementsByClassName("project-title");
@@ -106,7 +92,9 @@ function mouseoutProject(project){
 }
 
 
-// #######################################################
+// ###########################################################
+// skill mouseover event => css animation
+// ########################################################### //
 
 function mouseoverHTML(skill){
     skill.style.border = "3px solid #f86d58";
